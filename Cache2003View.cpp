@@ -35,6 +35,13 @@ static char THIS_FILE[] = __FILE__;
 /////////////////////////////////////////////////////////////////////////////
 // CCache2003View
 
+CString itoS(int x) {
+	CString sout;
+	sout.Format("%i", x);
+	return sout;
+}
+
+
 IMPLEMENT_DYNCREATE(CCache2003View, CFormView)
 
 BEGIN_MESSAGE_MAP(CCache2003View, CFormView)
@@ -112,7 +119,7 @@ CCache2003View::CCache2003View()
 	m_nMC = 0;
 	m_nBloque = 0;
 	m_nVias = "2";
-	m_iP_Emplazamiento = 1;
+	m_iP_Emplazamiento = 0; // 1
 	m_iP_Reemplazamiento = 0;
 	m_Dato = _T("");
 	m_NPalabra = _T("");
@@ -481,6 +488,7 @@ void CCache2003View::OnInitialUpdate()
 		//Rejilla Memoria Principal
 		TamCeldasNoFijas( m_Fila, m_Col);
 	
+		/*
 		m_CtrlRejilla_MP.SetRow(0);
 		m_CtrlRejilla_MP.SetCol(0);
 		m_CtrlRejilla_MP.SetText("Dirección");
@@ -507,6 +515,7 @@ void CCache2003View::OnInitialUpdate()
 		m_CtrlRejilla_MP.SetColWidth(3, 0);
 		m_CtrlRejilla_MP.SetColWidth(4, 0);
 		m_CtrlRejilla_MP.SetColWidth(5, 0);
+		*/
     
 		//Rejilla Memoria Cache
 		TamCeldasNoFijas_MC( m_Fila, m_Col );
@@ -697,6 +706,7 @@ void CCache2003View::OnInitialUpdate()
 	 */
 	}
 	
+	m_grid.CreateGrid(WS_CHILD | WS_VISIBLE, CRect(120, 53, 355, 250), this, 23422);
 }	
 	
 
@@ -884,29 +894,30 @@ void CCache2003View::OnConfiguracionMemorias()
 			delete m_dlgDireccion.m_pEtiquetas;
 			m_dlgDireccion.m_pEtiquetas = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_inLineas; i++)
+		for(int i = 0; i<=m_dlgDireccion.m_inLineas; i++)
 		{
 			delete m_dlgDireccion.m_pLineas;
 			m_dlgDireccion.m_pLineas = NULL;
 		}
-		for( i = 0; i<= m_dlgDireccion.m_inPalabras; i++)
+		for(int i = 0; i<= m_dlgDireccion.m_inPalabras; i++)
 		{
 			delete m_dlgDireccion.m_pPalabras;
 			m_dlgDireccion.m_pPalabras = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_inConjuntos; i++)
+		for(int i = 0; i<=m_dlgDireccion.m_inConjuntos; i++)
 		{
 			delete m_dlgDireccion.m_pConjuntos;
 			m_dlgDireccion.m_pConjuntos = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_iTotalBits; i++)
+		for(int i = 0; i<=m_dlgDireccion.m_iTotalBits; i++)
 		{
 			delete m_dlgDireccion.m_pnBits;
 			m_dlgDireccion.m_pnBits = NULL;
 		}
 		
 		
-		if(dlgMemorias.m_inMP > 15 || dlgMemorias.m_inMC > 15 || dlgMemorias.m_inBloque > 15)
+		//if (dlgMemorias.m_inMP > 15 || dlgMemorias.m_inMC > 15 || dlgMemorias.m_inBloque > 15)
+		if (dlgMemorias.m_inMP > 24 || dlgMemorias.m_inMC > 16 || dlgMemorias.m_inBloque > 15)
 		{
 			AfxMessageBox("El tamaño de la memoria asignado es demasiado grande para la visualización del control rejilla.\nPor favor introduzca tamaños más pequeños de memoria.", MB_ICONSTOP, IDOK);
 		 return;
@@ -968,6 +979,7 @@ void CCache2003View::OnConfiguracionMemorias()
 		TamCeldasNoFijas(m_TamMP, 6);
 		TamCeldasNoFijas_MC(m_TamMC, 6);	
 		//Columnas con ancho nulo 
+		/*
 	    m_CtrlRejilla_MP.SetColWidth(2, 0);
 	    m_CtrlRejilla_MP.SetColWidth(3, 0);
 		m_CtrlRejilla_MP.SetColWidth(4, 0);
@@ -977,7 +989,8 @@ void CCache2003View::OnConfiguracionMemorias()
 		m_CtrlRejilla_MC.SetColWidth(3, 0);
 		m_CtrlRejilla_MC.SetColWidth(4, 0);
 		m_CtrlRejilla_MC.SetColWidth(5, 0);
-		
+		*/
+
 		ResetDatos();
 		/*
 		LimpiarRejilla_MP();
@@ -1156,22 +1169,22 @@ Primero();
 			delete m_dlgDireccion.m_pEtiquetas;
 			m_dlgDireccion.m_pEtiquetas = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_inLineas; i++)
+		for( int i = 0; i<=m_dlgDireccion.m_inLineas; i++)
 		{
 			delete m_dlgDireccion.m_pLineas;
 			m_dlgDireccion.m_pLineas = NULL;
 		}
-		for( i = 0; i<= m_dlgDireccion.m_inPalabras; i++)
+		for( int i = 0; i<= m_dlgDireccion.m_inPalabras; i++)
 		{
 			delete m_dlgDireccion.m_pPalabras;
 			m_dlgDireccion.m_pPalabras = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_inConjuntos; i++)
+		for( int i = 0; i<=m_dlgDireccion.m_inConjuntos; i++)
 		{
 			delete m_dlgDireccion.m_pConjuntos;
 			m_dlgDireccion.m_pConjuntos = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_iTotalBits; i++)
+		for( int i = 0; i<=m_dlgDireccion.m_iTotalBits; i++)
 		{
 			delete m_dlgDireccion.m_pnBits;
 			m_dlgDireccion.m_pnBits = NULL;
@@ -1373,7 +1386,11 @@ void CCache2003View::TamCeldasNoFijas(long nFilasFijas, long nColFijas)
 		Columnas = nColFijas + 1;
 	}
 
-	m_CtrlRejilla_MP.SetRows(Filas);
+	int nada = 0;
+	m_CtrlRejilla_MP.SetCols(Columnas);
+	// 2020-05-18 - nelbren
+	/*
+	m_CtrlRejilla_MP.SetRows(Filas); 
 	m_CtrlRejilla_MP.SetCols(Columnas);
 
 
@@ -1382,11 +1399,11 @@ void CCache2003View::TamCeldasNoFijas(long nFilasFijas, long nColFijas)
 		m_CtrlRejilla_MP.SetRowHeight( i, (AltoCtrlRej - 255 )/14);
 	}
 
-	for( i = 1; i <= Columnas - 1; i++ )
+	for( int i = 1; i <= Columnas - 1; i++ )
 	{
 		m_CtrlRejilla_MP.SetColWidth( i, (AnchoCtrlRej - 255 )/1);
 	}
-
+	*/
 	
 }
 
@@ -1474,9 +1491,9 @@ void CCache2003View::MostrarMP()
 
 void CCache2003View::LimpiarRejilla_MP()
 {
+	/*
 	for( int i=0; i<m_TamMP; i++)
 	{
-		
 		*(m_arrayDirMPPtr + i) = -1;
 		*(m_arrayDatosMPPtr + i) = '\0';
 		*(m_arrayTipoMPPtr + i) = '\0';	 
@@ -1491,6 +1508,7 @@ void CCache2003View::LimpiarRejilla_MP()
 		
 	
 	}
+	*/
 
 }
 
@@ -1540,7 +1558,7 @@ void CCache2003View::LlenarMP()
 
 	total = pDoc->ObtenerTotalSecuencias();
 			
-	for( i = total; i>0; i--)
+	for( int i = total; i>0; i--)
 	{
 		pDoc->EliminarSecuencia(i);
 	}
@@ -1564,7 +1582,7 @@ void CCache2003View::LlenarMP()
 	 Primero();
 	
 
-		for(  i = 0; i< m_TamMP; i++)
+		for(  int i = 0; i< m_TamMP; i++)
 		{	
 	   
 			*(m_arrayDatosMPPtr + i  )= 10 + rand() % 10000;
@@ -1595,7 +1613,7 @@ void CCache2003View::LlenarMP()
 	m_arrayDirMCPtr = new int[ m_TamMC ];
 	m_arrayDatosMCPtr = new int[ m_TamMC ];
 	m_arrayTipoMCPtr = new int[ m_TamMC ];
-	for(i= 0; i<m_TamMC; i++)
+	for(int i= 0; i<m_TamMC; i++)
 	{
 		*(m_arrayDirMCPtr + i) = -1;
 		*(m_arrayDatosMCPtr + i) = '\0';
@@ -1609,7 +1627,7 @@ void CCache2003View::LlenarMP()
 	m_contEdad = new int[ m_in_Bloques_MC ];
 	m_contFrec = new int[ m_in_Bloques_MC ];
 	
-	for( i = 0; i<m_in_Bloques_MC; i++)
+	for( int i = 0; i<m_in_Bloques_MC; i++)
     {
 		*(m_contLineas + i) = 0;
 		*(m_contEdad + i) = 0;
@@ -1620,7 +1638,7 @@ void CCache2003View::LlenarMP()
 		m_arrayDirSecMPPtr = new int[ m_inSec]; 
 		m_arraySecMPPtr = new int[m_inSec];
 	    
-		for( i = 0; i<(m_inSec); i++)
+		for( int i = 0; i<(m_inSec); i++)
 		{
 		
 			*(m_arrayDirSecMPPtr + i) = 0;
@@ -1725,21 +1743,21 @@ void CCache2003View::TamCeldasNoFijas_MC(long nFilasFijas, long nColFijas)
 		Columnas = nColFijas + 1;
 	}
 
+	m_CtrlRejilla_MC.SetCols(Columnas);
+	/*
 	m_CtrlRejilla_MC.SetRows(Filas);
 	m_CtrlRejilla_MC.SetCols(Columnas);
-
 
 	for( int i = 1; i <= Filas -1; i++ )
 	{
 		m_CtrlRejilla_MC.SetRowHeight( i, (AltoCtrlRej - 255 )/14);
 	}
 
-	for( i = 1; i <= Columnas - 1; i++ )
+	for( int i = 1; i <= Columnas - 1; i++ )
 	{
 		m_CtrlRejilla_MC.SetColWidth( i, (AnchoCtrlRej - 255 )/1);
 	}
-
-
+	*/
 }
 
 
@@ -1829,7 +1847,7 @@ void CCache2003View::SimulaDirecto_CAsig(int nSim, int contAciertos, int contFal
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito; // DatoEscrito
 			
 			
 			nMP = dlgDireccion.ConvertBase2(TamMP);
@@ -1867,11 +1885,11 @@ void CCache2003View::SimulaDirecto_CAsig(int nSim, int contAciertos, int contFal
 			
 
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
-			m_NLinea = NLinea;
+			m_Dato = s_Dato; // Dato
+			m_NPalabra =itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
+			m_NLinea = itoS(NLinea);
 			
 			
 
@@ -2230,7 +2248,7 @@ void CCache2003View::OnSimular()
 	
 	//Repintado de celdas MC a su color original
 	
-	for(i = 1; i<=m_TamMC; i++)
+	for(int i = 1; i<=m_TamMC; i++)
 	{
 		ColorearMC( i, 0, 0x00CCCCCC, 0x00FF0000); 
 		ColorearMC( i, 1, 0x00FFFFFF, 0x00FF0000);
@@ -2898,7 +2916,7 @@ void CCache2003View::A_Aleatorio_CAsig(int Ini_Linea, int w, int nSim, int contA
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			
 
@@ -2914,10 +2932,10 @@ void CCache2003View::A_Aleatorio_CAsig(int Ini_Linea, int w, int nSim, int contA
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
 			m_dlgDireccion.UpdateData(true);
@@ -3053,7 +3071,7 @@ void CCache2003View::A_Aleatorio_CAsig(int Ini_Linea, int w, int nSim, int contA
 						}
 					}
 					
-					m_NLinea = NBloqueMC;
+					m_NLinea = itoS(NBloqueMC);
 					
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					w--;
@@ -3074,7 +3092,7 @@ void CCache2003View::A_Aleatorio_CAsig(int Ini_Linea, int w, int nSim, int contA
 			if( *(arrayDatosMCPtr + (w)*TamBloque ) == '\0')
 			{
 				NLinea++;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 
@@ -3082,7 +3100,7 @@ void CCache2003View::A_Aleatorio_CAsig(int Ini_Linea, int w, int nSim, int contA
 			{
 				srand( time( 0) );
 				NLinea = rand() % TamLinea;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 			
@@ -3247,7 +3265,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -3260,7 +3278,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -3376,7 +3394,7 @@ void CCache2003View::A_LRU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
@@ -3384,10 +3402,10 @@ void CCache2003View::A_LRU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			//UpdateData(false);
 
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
@@ -3504,7 +3522,7 @@ void CCache2003View::A_LRU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 					
 					int NLineaAcierto;
 					NLineaAcierto = i/TamBloque;
-					m_NLinea = NLineaAcierto;
+					m_NLinea = itoS(NLineaAcierto);
 					
 					
 					 
@@ -3579,7 +3597,7 @@ void CCache2003View::A_LRU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 			if( *(arrayDatosMCPtr + (w)*TamBloque ) == '\0')
 			{
 				NLinea++;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				
 				for( i = 0; i<TamLinea; i++)
@@ -3611,7 +3629,7 @@ void CCache2003View::A_LRU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 					if( *(contEdad + i) == (TamLinea - 1))
 					{
 					   NLinea = i;
-					   m_NLinea = NLinea;
+					   m_NLinea = itoS(NLinea);
 					   
 					}
 				
@@ -3772,7 +3790,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -3785,7 +3803,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -3913,17 +3931,17 @@ void CCache2003View::A_LFU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			//UpdateData(false);
 
@@ -4039,7 +4057,7 @@ void CCache2003View::A_LFU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					            		
 					NLinea = i/TamBloque;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 					
@@ -4065,7 +4083,7 @@ void CCache2003View::A_LFU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 
 
 
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 
 					
@@ -4112,7 +4130,7 @@ void CCache2003View::A_LFU_CAsig(int Ini_Linea, int w, int nSim, int contAcierto
 					
 								
 				++*(contFrec + NLinea);
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				ImprimeContadores(contFrec, TamLinea, 5);	                   				
 			}	
@@ -4317,7 +4335,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -4330,7 +4348,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -4448,7 +4466,7 @@ void CCache2003View::A_FIFO_CAsig(int Ini_Linea, int w, int nSim, int contAciert
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
@@ -4456,10 +4474,10 @@ void CCache2003View::A_FIFO_CAsig(int Ini_Linea, int w, int nSim, int contAciert
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
 			m_dlgDireccion.UpdateData(true);
@@ -4575,7 +4593,7 @@ void CCache2003View::A_FIFO_CAsig(int Ini_Linea, int w, int nSim, int contAciert
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					            		
 					NLinea = i/TamBloque;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 					
@@ -4602,7 +4620,7 @@ void CCache2003View::A_FIFO_CAsig(int Ini_Linea, int w, int nSim, int contAciert
 
 
 
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 
 					
@@ -4641,7 +4659,7 @@ void CCache2003View::A_FIFO_CAsig(int Ini_Linea, int w, int nSim, int contAciert
 					
 								
 				++*(contLineas + NLinea);
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				ImprimeContadores(contLineas, TamLinea, 3);	                   				
 			}	
@@ -4840,7 +4858,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -4853,7 +4871,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -5246,7 +5264,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			
 			
@@ -5332,14 +5350,14 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 			
 
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra =itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 			
 			
 			/*
@@ -5443,7 +5461,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 					
                     NVia = (i/TamBloque) % Vias; 
 					contAciertos++;
-					m_NLinea = NBloqueMC;
+					m_NLinea = itoS(NBloqueMC);
 					
 					Acierto++;
 					goto Salir;
@@ -5488,7 +5506,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 			}
@@ -5581,7 +5599,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 								
@@ -5672,7 +5690,7 @@ Salir:
 				}
 
 			
-			m_nLineaConjunto = NVia;
+			m_nLineaConjunto = itoS(NVia);
 			
 				
 
@@ -5713,7 +5731,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -5726,7 +5744,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -5853,7 +5871,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 				
 			//Control de Excepción de números fraccionarios
 			
@@ -5929,14 +5947,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 				
 
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 			
 		  /*
 			Dato seleccionado Aleatoriamente ...."<<Dato;
@@ -6016,7 +6034,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
                     
 					int NLineaAcierto;
 					NLineaAcierto = i/TamBloque;
-					m_NLinea = NLineaAcierto;
+					m_NLinea = itoS(NLineaAcierto);
 					
 					NVia = NLineaAcierto % Vias;
 					
@@ -6151,7 +6169,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					UpdateData(false);
 					
 			}
@@ -6276,7 +6294,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea =NLinea;
+				m_NLinea = itoS(NLinea);
 				UpdateData(false);
 			}
 								
@@ -6366,7 +6384,7 @@ Salir:
 
 			
 				
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 								
 				 
 				if(w< TamLinea - 1)
@@ -6414,7 +6432,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -6427,7 +6445,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -6555,7 +6573,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			//Control de Excepción de números fraccionarios
 			
@@ -6628,14 +6646,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			}
 
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 						
 			/*
 			Dato seleccionado Aleatoriamente ...."<<Dato;
@@ -6714,7 +6732,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					                    
 					NLinea = (i/TamBloque);
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					NVia = NLinea % Vias; 
 					
@@ -6827,7 +6845,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 			}
@@ -6957,7 +6975,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 								
@@ -7051,7 +7069,7 @@ Salir:
 				}
 
 			
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 				
 				
 				
@@ -7101,7 +7119,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -7114,7 +7132,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -7243,7 +7261,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 						
 			
 			//Control de Excepción de números fraccionarios
@@ -7319,14 +7337,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 
 			
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 						
 			/*
 			Dato seleccionado Aleatoriamente ...."<<Dato;
@@ -7408,7 +7426,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					                    
 					NLinea = (i/TamBloque);
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					NVia = NLinea % Vias; 
 					
@@ -7510,7 +7528,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					UpdateData(false);
 					
 			}
@@ -7637,7 +7655,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 								
@@ -7729,7 +7747,7 @@ Salir:
 					}
 				}
 
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 							
 				
 				
@@ -7778,7 +7796,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -7791,7 +7809,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -8250,7 +8268,7 @@ void CCache2003View::SimulaDirecto_SAsig(int nSim, int contAciertos, int contFal
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
@@ -8294,11 +8312,11 @@ void CCache2003View::SimulaDirecto_SAsig(int nSim, int contAciertos, int contFal
 			
 
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
-			m_NLinea = NLinea;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
+			m_NLinea = itoS(NLinea);
 			
 
 			
@@ -8750,7 +8768,7 @@ void CCache2003View::A_Aleatorio_SAsig(int Ini_Linea, int w, int nSim, int contA
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			
 
@@ -8766,10 +8784,10 @@ void CCache2003View::A_Aleatorio_SAsig(int Ini_Linea, int w, int nSim, int contA
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
 			m_dlgDireccion.UpdateData(true);
@@ -8900,7 +8918,7 @@ void CCache2003View::A_Aleatorio_SAsig(int Ini_Linea, int w, int nSim, int contA
 						}
 					}
 					
-					m_NLinea = NBloqueMC;
+					m_NLinea = itoS(NBloqueMC);
 					UpdateData(false);
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					w--;
@@ -8939,7 +8957,7 @@ void CCache2003View::A_Aleatorio_SAsig(int Ini_Linea, int w, int nSim, int contA
 		  if( *(arrayDatosMCPtr + (w)*TamBloque ) == '\0')
 			{
 				NLinea++;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 
@@ -8947,7 +8965,7 @@ void CCache2003View::A_Aleatorio_SAsig(int Ini_Linea, int w, int nSim, int contA
 			{
 				srand( time( 0) );
 				NLinea = rand() % TamLinea;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 			
@@ -9180,7 +9198,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -9193,7 +9211,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -9309,7 +9327,7 @@ void CCache2003View::A_LRU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
@@ -9317,10 +9335,10 @@ void CCache2003View::A_LRU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
@@ -9437,7 +9455,7 @@ void CCache2003View::A_LRU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 					
 					int NLineaAcierto;
 					NLineaAcierto = i/TamBloque;
-					m_NLinea = NLineaAcierto;
+					m_NLinea = itoS(NLineaAcierto);
 					
 					GetDlgItem(IDC_EDIT_LINEA) ->EnableWindow(TRUE);
 					GetDlgItem(IDC_STATIC_LINEA) ->EnableWindow(TRUE);  
@@ -9526,7 +9544,7 @@ void CCache2003View::A_LRU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 			if( *(arrayDatosMCPtr + (w)*TamBloque ) == '\0')
 			{
 				NLinea++;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				
 				for( i = 0; i<TamLinea; i++)
@@ -9558,7 +9576,7 @@ void CCache2003View::A_LRU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 					if( *(contEdad + i) == (TamLinea - 1))
 					{
 					   NLinea = i;
-					   m_NLinea = NLinea;
+					   m_NLinea = itoS(NLinea);
 					   
 					}
 				
@@ -9799,7 +9817,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -9812,7 +9830,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -9929,7 +9947,7 @@ void CCache2003View::A_FIFO_SAsig(int Ini_Linea, int w, int nSim, int contAciert
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
@@ -9937,10 +9955,10 @@ void CCache2003View::A_FIFO_SAsig(int Ini_Linea, int w, int nSim, int contAciert
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
 			m_dlgDireccion.UpdateData(true);
@@ -10053,7 +10071,7 @@ void CCache2003View::A_FIFO_SAsig(int Ini_Linea, int w, int nSim, int contAciert
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					            		
 					NLinea = i/TamBloque;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					GetDlgItem(IDC_EDIT_LINEA) ->EnableWindow(TRUE);
 				    GetDlgItem(IDC_STATIC_LINEA) ->EnableWindow(TRUE);
@@ -10081,7 +10099,7 @@ void CCache2003View::A_FIFO_SAsig(int Ini_Linea, int w, int nSim, int contAciert
 
 
 
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 
 					
@@ -10134,7 +10152,7 @@ void CCache2003View::A_FIFO_SAsig(int Ini_Linea, int w, int nSim, int contAciert
 					
 								
 				++*(contLineas + NLinea);
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				ImprimeContadores(contLineas, TamLinea, 3);	                   				
 			}	
@@ -10404,7 +10422,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -10417,7 +10435,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -10537,17 +10555,17 @@ void CCache2003View::A_LFU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
@@ -10664,7 +10682,7 @@ void CCache2003View::A_LFU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					            		
 					NLinea = i/TamBloque;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					GetDlgItem(IDC_EDIT_LINEA) ->EnableWindow(TRUE);
 					GetDlgItem(IDC_STATIC_LINEA) ->EnableWindow(TRUE);  
@@ -10693,7 +10711,7 @@ void CCache2003View::A_LFU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 
 
 
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 
 					
@@ -10755,7 +10773,7 @@ void CCache2003View::A_LFU_SAsig(int Ini_Linea, int w, int nSim, int contAcierto
 					
 								
 				++*(contFrec + NLinea);
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				ImprimeContadores(contFrec, TamLinea, 5);	                   				
 			}	
@@ -11024,7 +11042,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -11037,7 +11055,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -11148,7 +11166,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			
 			
@@ -11233,14 +11251,14 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 
 			
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 			
 			
 			/*
@@ -11346,7 +11364,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 					
                     NVia = (i/TamBloque) % Vias; 
 					contAciertos++;
-					m_NLinea = NBloqueMC;
+					m_NLinea = itoS(NBloqueMC);
 					
 					Acierto++;
 					GetDlgItem(IDC_EDIT_LINEA) ->EnableWindow(TRUE);
@@ -11412,7 +11430,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 			}
@@ -11505,7 +11523,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 								
@@ -11671,7 +11689,7 @@ Salir:
 				}
 
 			
-			m_nLineaConjunto = NVia;
+			m_nLineaConjunto = itoS(NVia);
 			
 				
 
@@ -11712,7 +11730,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -11725,7 +11743,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -11852,7 +11870,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			 //Control de Excepción de números fraccionarios
 			
@@ -11925,14 +11943,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 
 			
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 						
 			/*
 			Dato seleccionado Aleatoriamente ...."<<Dato;
@@ -12014,7 +12032,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					                    
 					NLinea = (i/TamBloque);
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					NVia = NLinea % Vias; 
 					GetDlgItem(IDC_EDIT_LINEA) ->EnableWindow(TRUE);
@@ -12136,7 +12154,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 			}
@@ -12265,7 +12283,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 								
@@ -12427,7 +12445,7 @@ Salir:
 					}
 				}
 
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 				
 				
 				
@@ -12477,7 +12495,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -12490,7 +12508,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -12615,7 +12633,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			 //Control de Excepción de números fraccionarios
 			
@@ -12692,14 +12710,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 
 			
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 						
 			/*
 			Dato seleccionado Aleatoriamente ...."<<Dato;
@@ -12779,7 +12797,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					                    
 					NLinea = (i/TamBloque);
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					NVia = NLinea % Vias; 
 					GetDlgItem(IDC_EDIT_LINEA) ->EnableWindow(TRUE);
@@ -12912,7 +12930,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 			}
@@ -13042,7 +13060,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 								
@@ -13204,7 +13222,7 @@ Salir:
 				}
 
 			
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 								
 				
 				if(w< TamLinea - 1)
@@ -13252,7 +13270,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -13265,7 +13283,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -13392,7 +13410,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			
 			//Control de Excepción de números fraccionarios
@@ -13466,14 +13484,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 
 			
 
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 			
 
 		  /*
@@ -13554,7 +13572,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
                    
 					int NLineaAcierto;
 					NLineaAcierto = i/TamBloque;
-					m_NLinea = NLineaAcierto;
+					m_NLinea = itoS(NLineaAcierto);
 					
 					NVia = NLineaAcierto % Vias;
 					GetDlgItem(IDC_EDIT_LINEA) ->EnableWindow(TRUE);
@@ -13709,7 +13727,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 			}
@@ -13833,7 +13851,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea =NLinea;
+				m_NLinea = itoS(NLinea);
 				UpdateData(false);
 			}
 								
@@ -13999,7 +14017,7 @@ Salir:
 
 			
 				
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 								
 				 
 				if(w< TamLinea - 1)
@@ -14047,7 +14065,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -14060,7 +14078,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -14180,7 +14198,7 @@ void CCache2003View::SimulaDirecto_Post(int nSim, int contAciertos, int contFall
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			UpdateData(false);
 			
 			nMP = dlgDireccion.ConvertBase2(TamMP);
@@ -14217,11 +14235,11 @@ void CCache2003View::SimulaDirecto_Post(int nSim, int contAciertos, int contFall
 
 			
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
-			m_NLinea = NLinea;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
+			m_NLinea = itoS(NLinea);
 			
 
 			
@@ -14615,7 +14633,7 @@ void CCache2003View::A_Aleatorio_Post(int Ini_Linea, int w, int nSim, int contAc
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			
 
@@ -14631,10 +14649,10 @@ void CCache2003View::A_Aleatorio_Post(int Ini_Linea, int w, int nSim, int contAc
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
 			m_dlgDireccion.UpdateData(true);
@@ -14782,7 +14800,7 @@ void CCache2003View::A_Aleatorio_Post(int Ini_Linea, int w, int nSim, int contAc
 						}
 					}
 					
-					m_NLinea = NBloqueMC;
+					m_NLinea = itoS(NBloqueMC);
 					UpdateData(false);
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					w--;
@@ -14803,7 +14821,7 @@ void CCache2003View::A_Aleatorio_Post(int Ini_Linea, int w, int nSim, int contAc
 			if( *(arrayDatosMCPtr + (w)*TamBloque ) == '\0')
 			{
 				NLinea++;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 
@@ -14811,7 +14829,7 @@ void CCache2003View::A_Aleatorio_Post(int Ini_Linea, int w, int nSim, int contAc
 			{
 				srand( time( 0) );
 				NLinea = rand() % TamLinea;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			}
 			
@@ -15008,7 +15026,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -15021,7 +15039,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -15145,17 +15163,17 @@ void CCache2003View::A_FIFO_Post(int Ini_Linea, int w, int nSim, int contAcierto
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			
 			
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
 			m_dlgDireccion.UpdateData(true);
@@ -15277,7 +15295,7 @@ void CCache2003View::A_FIFO_Post(int Ini_Linea, int w, int nSim, int contAcierto
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					            		
 					NLinea = i/TamBloque;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 					
@@ -15304,7 +15322,7 @@ void CCache2003View::A_FIFO_Post(int Ini_Linea, int w, int nSim, int contAcierto
 
 
 
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					UpdateData(false);
 
 									
@@ -15343,7 +15361,7 @@ void CCache2003View::A_FIFO_Post(int Ini_Linea, int w, int nSim, int contAcierto
 					
 								
 				++*(contLineas + NLinea);
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				ImprimeContadores(contLineas, TamLinea, 3);	                   				
 			}	
@@ -15580,7 +15598,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -15593,7 +15611,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -15718,17 +15736,17 @@ void CCache2003View::A_LFU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
 			m_dlgDireccion.UpdateData(true);
@@ -15847,7 +15865,7 @@ void CCache2003View::A_LFU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					            		
 					NLinea = i/TamBloque;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 					
@@ -15873,7 +15891,7 @@ void CCache2003View::A_LFU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 
 
 
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 
 					
@@ -15920,7 +15938,7 @@ void CCache2003View::A_LFU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 					
 								
 				++*(contFrec + NLinea);
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				ImprimeContadores(contFrec, TamLinea, 5);	                   				
 			}	
@@ -16160,7 +16178,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -16173,7 +16191,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -16293,7 +16311,7 @@ void CCache2003View::A_LRU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 
 			
@@ -16301,10 +16319,10 @@ void CCache2003View::A_LRU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 			NBloque = Truncar( NPalabra, TamBloque);
 			NPalabraBloque = Sobrante( NPalabra, TamBloque);
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			
 			
 			ActualizarDatosDir(nMP, Dato, DatoEscrito, Dir, m_sTipo);
@@ -16430,7 +16448,7 @@ void CCache2003View::A_LRU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 					
 					int NLineaAcierto;
 					NLineaAcierto = i/TamBloque;
-					m_NLinea = NLineaAcierto;
+					m_NLinea = itoS(NLineaAcierto);
 										
 					 
 					//Colorea Acierto
@@ -16502,7 +16520,7 @@ void CCache2003View::A_LRU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 			if( *(arrayDatosMCPtr + (w)*TamBloque ) == '\0')
 			{
 				NLinea++;
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 				
 				for( i = 0; i<TamLinea; i++)
@@ -16534,7 +16552,7 @@ void CCache2003View::A_LRU_Post(int Ini_Linea, int w, int nSim, int contAciertos
 					if( *(contEdad + i) == (TamLinea - 1))
 					{
 					   NLinea = i;
-					   m_NLinea = NLinea;
+					   m_NLinea = itoS(NLinea);
 					   
 					}
 				
@@ -16738,7 +16756,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -16751,7 +16769,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -16862,7 +16880,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 					
 			
 
@@ -16947,14 +16965,14 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 			
 
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 			
 
 			/*
@@ -17067,7 +17085,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 					
                     NVia = (i/TamBloque) % Vias; 
 					contAciertos++;
-					m_NLinea = NBloqueMC;
+					m_NLinea = itoS(NBloqueMC);
 					
 					Acierto++;
 					goto Salir;
@@ -17110,7 +17128,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					Contador( contLineas, TamLinea, NLinea, 3);
 	
@@ -17282,7 +17300,7 @@ GetDlgItem(IDC_CHECK_CONT) -> EnableWindow(TRUE);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 	}//Fin del else
 								
@@ -17328,7 +17346,7 @@ Salir:
 				}
 
 			
-			m_nLineaConjunto = NVia;
+			m_nLineaConjunto = itoS(NVia);
 			
 				
 
@@ -17369,7 +17387,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -17382,7 +17400,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -17516,7 +17534,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			 //Control de Excepción de números fraccionarios
 			
@@ -17593,14 +17611,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 				
 		
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 						
 			/*
 			Dato seleccionado Aleatoriamente ...."<<Dato;
@@ -17689,7 +17707,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					                    
 					NLinea = (i/TamBloque);
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					NVia = NLinea % Vias; 
 					
@@ -17790,7 +17808,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 	}
@@ -17992,7 +18010,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				UpdateData(false);
 	}
 								
@@ -18033,7 +18051,7 @@ Salir:
 					}
 				}
 
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 				
 				
 				
@@ -18083,7 +18101,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -18096,7 +18114,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -18229,7 +18247,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			//Control de Excepción de números fraccionarios
 			
@@ -18306,14 +18324,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			
 			
 
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 			
 			
 			/*
@@ -18401,7 +18419,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					MessageBox("A C I E R T O!!!\nSe encontró la Palabra");
 					                    
 					NLinea = (i/TamBloque);
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					NVia = NLinea % Vias; 
 					
@@ -18517,7 +18535,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 	} //Fin del if
@@ -18721,7 +18739,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea = NLinea;
+				m_NLinea = itoS(NLinea);
 				
 			
 			
@@ -18769,7 +18787,7 @@ Salir:
 				}
 
 			
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 				
 							
 				
@@ -18818,7 +18836,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -18831,7 +18849,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -18959,7 +18977,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			CString s_DatoEscrito;
 			s_Dato = _itoa( Dato  , bufferDato, 10);
 			s_DatoEscrito = _itoa( DatoEscrito  , bufferDatoEscrito, 10);
-			m_Dato_Escrito = DatoEscrito;
+			m_Dato_Escrito = s_DatoEscrito;
 			
 			//Control de Excepción de números fraccionarios
 			
@@ -19036,14 +19054,14 @@ TamConjunto = TamMC/(TamBloque*Vias);
 			}
 
 			
-			m_Dato = Dato;
-			m_NPalabra =NPalabra;
-			m_NBloque = NBloque;
-			m_NPalabraBloque = NPalabraBloque;
+			m_Dato = s_Dato;
+			m_NPalabra = itoS(NPalabra);
+			m_NBloque = itoS(NBloque);
+			m_NPalabraBloque = itoS(NPalabraBloque);
 			m_TamConjunto = TamConjunto;
 			m_PalabraConjunto = NPalabraConjunto;
 			m_nBloqueConjunto = NBloqueConjunto;
-			m_NConjunto = NConjunto;
+			m_NConjunto = itoS(NConjunto);
 			
 		  /*
 			Dato seleccionado Aleatoriamente ...."<<Dato;
@@ -19130,7 +19148,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
                    
 					int NLineaAcierto;
 					NLineaAcierto = i/TamBloque;
-					m_NLinea = NLineaAcierto;
+					m_NLinea = itoS(NLineaAcierto);
 					
 					NVia = NLineaAcierto % Vias;
 					
@@ -19267,7 +19285,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 	      													
 					}
 					
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					
 					
 	}//fin del if
@@ -19464,7 +19482,7 @@ TamConjunto = TamMC/(TamBloque*Vias);
 					} 
 	      													
 				}
-				m_NLinea =NLinea;
+				m_NLinea = itoS(NLinea);
 				
 	}//fin del else
 								
@@ -19505,7 +19523,7 @@ Salir:
 
 			
 				
-				m_nLineaConjunto = NVia;
+				m_nLineaConjunto = itoS(NVia);
 				
 				
 				 
@@ -19554,7 +19572,7 @@ Salir:
 						m_contFallos = contFallos;
 						m_nSim = nSim;
 						m_iw = w;
-						m_NLinea = NLinea;
+						m_NLinea = itoS(NLinea);
 						m_ini_Linea	= NLinea;
 						UpdateData(false);
 					}
@@ -19567,7 +19585,7 @@ Salir:
 					m_contFallos = contFallos;
 					m_nSim = nSim;
 					m_iw = w;
-					m_NLinea = NLinea;
+					m_NLinea = itoS(NLinea);
 					m_ini_Linea	= NLinea;
 					UpdateData(false);
 
@@ -21367,7 +21385,7 @@ void CCache2003View::ResetDatos()
 	m_contEdad = new int[ m_in_Bloques_MC ];
 	m_contFrec = new int[ m_in_Bloques_MC ];
 	
-	for( i = 0; i<m_in_Bloques_MC; i++)
+	for(int i = 0; i<m_in_Bloques_MC; i++)
     {
 		*(m_contLineas + i) = 0;
 		*(m_contEdad + i) = 0;
@@ -21380,7 +21398,7 @@ void CCache2003View::ResetDatos()
 	m_arrayDirSecMPPtr = new int[ m_inSec]; 
 	m_arraySecMPPtr = new int[m_inSec ];
 	
-	for( i = 0; i<(m_inSec); i++)
+	for(int i = 0; i<(m_inSec); i++)
     {
 		*(m_arrayDirSecMPPtr + i) = 0;
 		*(m_arraySecMPPtr + i) = 0;
@@ -22004,7 +22022,7 @@ void CCache2003View::OnConfiguracionSimulacion()
 			
 			total = pDoc->ObtenerTotalSecuencias();
 			
-			for( i = total; i>=0; i--)
+			for( int i = total; i>=0; i--)
 			{
 				pDoc->EliminarSecuencia(i);
 				
@@ -22233,7 +22251,7 @@ void CCache2003View::LimpiarRejilla_MC()
 	
 	}
 	
-	for( i = 0; i<m_in_Bloques_MC; i++)
+	for(int i = 0; i<m_in_Bloques_MC; i++)
 	{
 		      *(m_contLineas + i) = 0;
 			  *(m_contEdad + i) = 0;
@@ -22352,22 +22370,22 @@ void CCache2003View::GeneraTamMP()
 			delete m_dlgDireccion.m_pEtiquetas;
 			m_dlgDireccion.m_pEtiquetas = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_inLineas; i++)
+		for(int i = 0; i<=m_dlgDireccion.m_inLineas; i++)
 		{
 			delete m_dlgDireccion.m_pLineas;
 			m_dlgDireccion.m_pLineas = NULL;
 		}
-		for( i = 0; i<= m_dlgDireccion.m_inPalabras; i++)
+		for(int i = 0; i<= m_dlgDireccion.m_inPalabras; i++)
 		{
 			delete m_dlgDireccion.m_pPalabras;
 			m_dlgDireccion.m_pPalabras = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_inConjuntos; i++)
+		for(int i = 0; i<=m_dlgDireccion.m_inConjuntos; i++)
 		{
 			delete m_dlgDireccion.m_pConjuntos;
 			m_dlgDireccion.m_pConjuntos = NULL;
 		}
-		for( i = 0; i<=m_dlgDireccion.m_iTotalBits; i++)
+		for(int i = 0; i<=m_dlgDireccion.m_iTotalBits; i++)
 		{
 			delete m_dlgDireccion.m_pnBits;
 			m_dlgDireccion.m_pnBits = NULL;
@@ -22724,7 +22742,7 @@ void CCache2003View::LlenarMP_OpenDoc()
 	m_arrayDirMCPtr = new int[ m_TamMC ];
 	m_arrayDatosMCPtr = new int[ m_TamMC ];
 	m_arrayTipoMCPtr = new int[ m_TamMC ];
-	for(i= 0; i<m_TamMC; i++)
+	for(int i= 0; i<m_TamMC; i++)
 	{
 		*(m_arrayDirMCPtr + i) = -1;
 		*(m_arrayDatosMCPtr + i) = '\0';
@@ -22738,7 +22756,7 @@ void CCache2003View::LlenarMP_OpenDoc()
 	m_contEdad = new int[ m_in_Bloques_MC ];
 	m_contFrec = new int[ m_in_Bloques_MC ];
 	
-	for( i = 0; i<m_in_Bloques_MC; i++)
+	for(int i = 0; i<m_in_Bloques_MC; i++)
     {
 		*(m_contLineas + i) = 0;
 		*(m_contEdad + i) = 0;
@@ -22752,7 +22770,7 @@ void CCache2003View::LlenarMP_OpenDoc()
 	m_arrayDirSecMPPtr = new int[ m_inSec]; 
 	m_arraySecMPPtr = new int[m_inSec];
 	
-	for( i = 0; i<(m_inSec); i++)
+	for(int i = 0; i<(m_inSec); i++)
     {
 		*(m_arraySecMPPtr + i  )= atoi(m_sSecuencia);
 		*(m_arrayDirSecMPPtr + i ) = atoi(m_sDirSecuencia);

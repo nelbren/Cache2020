@@ -1,0 +1,310 @@
+﻿  Making help include file...
+cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  StdAfx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  vcweighting.cpp
+  vcwall.cpp
+  vcview3d.cpp
+  vcvaluescale.cpp
+  vctitle.cpp
+  vctick.cpp
+  vctextlayout.cpp
+  vcstatline.cpp
+  vcshadow.cpp
+  vcseriesposition.cpp
+  vcseriesmarker.cpp
+  vcseriescollection.cpp
+  vcseries.cpp
+  vcrect.cpp
+  vcplotbase.cpp
+  vcplot.cpp
+  vcpen.cpp
+  vcmarker.cpp
+  vclocation.cpp
+  vclightsources.cpp
+  Generando código...
+  Compilando...
+  vclightsource.cpp
+  vclight.cpp
+  vclegend.cpp
+  vclcoor.cpp
+  vclabels.cpp
+  vclabel.cpp
+  vcintersection.cpp
+  vcframe.cpp
+  vcfootnote.cpp
+  vcfont.cpp
+  vcfill.cpp
+  vcdatapoints.cpp
+  vcdatapointlabel.cpp
+  vcdatapoint.cpp
+  vcdatagrid.cpp
+  vccoor.cpp
+  vccolor.cpp
+  vccategoryscale.cpp
+  vcbrush.cpp
+  vcbackdrop.cpp
+  Generando código...
+  Compilando...
+  vcaxistitle.cpp
+  vcaxisscale.cpp
+  vcaxisgrid.cpp
+  vcaxis.cpp
+  TiemposDlg.cpp
+  Splash.cpp
+  SimulacionDlg.cpp
+  Secuencia.cpp
+  PoliticasDlg.cpp
+  Parametros.cpp
+  msflexgrid.cpp
+  mschart.cpp
+  MemoriasDlg.cpp
+  MainFrm.cpp
+  Funciones.h
+  font.cpp
+  EstadisticasDlg.cpp
+  EscrituraDlg.cpp
+  DireccionDlg.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\DireccionDlg.cpp(706,14): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  DatosDlg.cpp
+  Generando código...
+  Compilando...
+  Datos.cpp
+  ColoresDlg.cpp
+  Cache2003View.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(1482,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(1574,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(1699,23): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(1811,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(1848,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(1849,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2378,15): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2380,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2421,15): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2423,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2460,15): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2462,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2500,15): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2502,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2564,15): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2566,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2595,15): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2597,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2624,15): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2626,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2656,15): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2658,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2872,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(3101,16): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2917,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(2918,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(3357,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(3395,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(3396,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(3893,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(3932,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(3933,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(4430,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(4467,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(4468,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(4925,18): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(5228,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(5568,16): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(5265,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(5266,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(5834,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(5872,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(5873,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(6537,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(6574,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(6575,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(7224,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(7262,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(7263,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(7903,21): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(7965,16): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(7967,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(7984,10): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(7986,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(8231,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(8269,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(8270,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(8731,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(8966,16): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(8769,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(8770,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(9290,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(9328,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(9329,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(9910,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(9948,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(9949,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(10519,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(10556,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(10557,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(11130,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(11492,16): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(11167,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(11168,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(11834,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(11871,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(11872,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(12597,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(12634,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(12635,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(13371,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(13411,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(13412,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(14160,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(14199,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(14200,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(14596,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(14830,16): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(14634,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(14635,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(15126,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(15164,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(15165,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(15698,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(15737,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(15738,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(16274,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(16312,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(16313,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(16843,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(17190,16): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(16881,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(16882,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(17497,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(17535,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(17536,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(18210,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(18248,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(18249,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(18940,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(18978,13): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(18979,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19727,18): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19728,19): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19729,16): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19730,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19731,22): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19732,14): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19842,18): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19843,19): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19844,16): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19845,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19846,22): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19847,14): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19848,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(19849,22): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(20587,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(20706,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(20711,9): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(20941,16): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(20942,16): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(21105,8): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(21518,20): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(21653,17): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(21672,11): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(22194,16): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(22195,19): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Cache2003View.cpp(22711,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Cache2003Doc.cpp
+  Cache2003.cpp
+  BuscarDlg.cpp
+  UGXPThemes.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGXPThemes.cpp(420,3): warning C4996: 'GetVersionExA': se declaró desusado
+  ugvscrol.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugvscrol.cpp(87,25): warning C4244: '=': conversión de 'int64_t' a 'long'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugvscrol.cpp(89,26): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugvscrol.cpp(118,27): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugvscrol.cpp(119,60): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugvscrol.cpp(160,60): warning C4244: 'argumento': conversión de 'int64_t' a 'long'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugvscrol.cpp(160,40): warning C4244: 'argumento': conversión de 'int64_t' a 'long'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugvscrol.cpp(206,53): warning C4244: '=': conversión de 'int64_t' a 'long'; posible pérdida de datos
+  UGTopHdg.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGTopHdg.cpp(342,18): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGTopHdg.cpp(547,18): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGTopHdg.cpp(654,18): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGTopHdg.cpp(1109,14): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+  ugtab.cpp
+  UGStrOp.cpp
+  ugsidehd.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(117,43): warning C4244: '+=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(239,44): warning C4244: '+=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(251,44): warning C4244: '-=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(364,15): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(466,39): warning C4244: '+=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(481,45): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(734,17): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(739,41): warning C4244: '+=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(781,47): warning C4244: '+=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\ugsidehd.cpp(785,29): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+  ugptrlst.cpp
+  ugprint.cpp
+  UGMultiS.cpp
+  UGMemMan.cpp
+  UGMEdit.cpp
+  ugLstBox.cpp
+  ughscrol.cpp
+  UGHint.cpp
+  Generando código...
+  Compilando...
+  UGGrid.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGGrid.cpp(394,42): warning C4244: '+=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGGrid.cpp(808,39): warning C4244: '+=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGGrid.cpp(820,39): warning C4244: '-=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGGrid.cpp(920,13): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGGrid.cpp(991,49): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+  uggdinfo.cpp
+  ugformat.cpp
+  UGEditBase.cpp
+  UGEdit.cpp
+  UGDtaSrc.cpp
+  UGDrwHnt.cpp
+  UGDrgDrp.cpp
+  UGDLType.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGDLType.cpp(229,16): warning C4244: '=': conversión de 'int64_t' a 'long'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGDLType.cpp(365,14): warning C4244: '=': conversión de 'int64_t' a 'long'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGDLType.cpp(605,34): warning C4244: '=': conversión de 'int64_t' a 'long'; posible pérdida de datos
+  UGCtrl.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(2128,19): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(2129,29): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(2263,16): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(2268,19): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(2325,16): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(2330,19): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(3332,41): warning C4244: 'inicializando': conversión de 'int64_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(3634,27): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(3810,42): warning C4244: 'inicializando': conversión de 'int64_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(3837,28): warning C4244: 'argumento': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(3902,25): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(5908,46): warning C4244: '+=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(7423,45): warning C4244: '+=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(7482,9): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(8778,11): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(8812,11): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(8853,33): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(8853,18): warning C4244: 'inicializando': conversión de 'int64_t' a 'const int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(8893,33): warning C4244: 'inicializando': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(8893,18): warning C4244: 'inicializando': conversión de 'int64_t' a 'const int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCtrl.cpp(8908,47): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+  UGCTarrw.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCTarrw.cpp(132,39): warning C4244: 'argumento': conversión de 'int64_t' a 'int'; posible pérdida de datos
+  UGCnrBtn.cpp
+  UGCelTyp.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCelTyp.cpp(851,40): warning C4244: 'argumento': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCelTyp.cpp(1179,32): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCelTyp.cpp(1187,27): warning C4244: '=': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCelTyp.cpp(1649,34): warning C4244: '=': conversión de 'int64_t' a 'LONG'; posible pérdida de datos
+  UGCell.cpp
+  UGCBType.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCBType.cpp(349,52): warning C4244: 'argumento': conversión de 'int64_t' a 'int'; posible pérdida de datos
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Source\UGCBType.cpp(351,51): warning C4244: 'argumento': conversión de 'int64_t' a 'int'; posible pérdida de datos
+  MyCUG.cpp
+C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Demos\BindingToArray\MyCUG.cpp(142,20): warning C4244: 'argumento': conversión de 'int64_t' a 'double'; posible pérdida de datos
+  Generando código...
+MyCUG.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/SAFESEH'
+  Cache2003.vcxproj -> C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Win32\Debug\Cache2020.exe

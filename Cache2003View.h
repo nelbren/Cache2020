@@ -1,9 +1,11 @@
 // Cache2003View.h : interface of the CCache2003View class
 //
 /////////////////////////////////////////////////////////////////////////////
+#pragma once
 //{{AFX_INCLUDES()
 #include "msflexgrid.h"
 //}}AFX_INCLUDES
+#include "MyCug.h"
 
 #if !defined(AFX_CACHE2003VIEW_H__B5315F23_2545_4867_980D_A4A3B5CA834F__INCLUDED_)
 #define AFX_CACHE2003VIEW_H__B5315F23_2545_4867_980D_A4A3B5CA834F__INCLUDED_
@@ -273,6 +275,8 @@ public:
 	
 
 protected:
+	MyCug m_grid;
+
 	int m_Col;
 	int m_Fila;
 	long **m_ppMP;

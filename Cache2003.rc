@@ -1,4 +1,4 @@
-//Microsoft Developer Studio generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -13,13 +13,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Spanish (Modern) resources
+// Español (España, alfabetización internacional) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
-#ifdef _WIN32
 LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
 #pragma code_page(1252)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -27,18 +25,18 @@ LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE DISCARDABLE 
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE DISCARDABLE 
+2 TEXTINCLUDE 
 BEGIN
     "#include ""afxres.h""\r\n"
     "\0"
 END
 
-3 TEXTINCLUDE DISCARDABLE 
+3 TEXTINCLUDE 
 BEGIN
     "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
     "#define _AFX_NO_OLE_RESOURCES\r\n"
@@ -67,46 +65,73 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PC02.ICO"
-IDR_CACHE2TYPE          ICON    DISCARDABLE     "res\\Cache2003Doc.ico"
-IDI_SIMULAR             ICON    DISCARDABLE     "res\\ARW01RT.ICO"
-IDI_ULTIMO_DAT          ICON    DISCARDABLE     "res\\ARW02DN.ICO"
-IDI_ANTERIOR_DAT        ICON    DISCARDABLE     "res\\ARW02LT.ICO"
-IDI_SIGUIENTE_DAT       ICON    DISCARDABLE     "res\\ARW02RT.ICO"
-IDI_PRIMERO_DAT         ICON    DISCARDABLE     "res\\ARW02UP.ICO"
-IDI_ULTIMO_SEC          ICON    DISCARDABLE     "res\\ARW04DN.ICO"
-IDI_ANTERIOR_SEC        ICON    DISCARDABLE     "res\\ARW04LT.ICO"
-IDI_SIGUIENTE_SEC       ICON    DISCARDABLE     "res\\ARW04RT.ICO"
-IDI_PRIMERO_SEC         ICON    DISCARDABLE     "res\\ARW04UP.ICO"
-IDI_TIEMPOS             ICON    DISCARDABLE     "res\\CLOCK02.ICO"
-IDI_SIMBOLOGIA          ICON    DISCARDABLE     "res\\EYE.ICO"
-IDI_ESTADISTICAS        ICON    DISCARDABLE     "res\\GRAPH07.ICO"
-IDI_OPCIONES            ICON    DISCARDABLE     "res\\TRFFC17.ICO"
-IDI_ESCRITURA           ICON    DISCARDABLE     "res\\NOTE14.ICO"
-IDI_MEMORIAS            ICON    DISCARDABLE     "res\\MISC25.ICO"
-IDI_POLITICAS           ICON    DISCARDABLE     "res\\MISC15.ICO"
-IDI_BUSCAR              ICON    DISCARDABLE     "res\\BINOCULR.ICO"
-IDI_DIRECCION           ICON    DISCARDABLE     "res\\BULLSEYE.ICO"
-IDI_AGREGAR             ICON    DISCARDABLE     "res\\MISC18.ICO"
-IDI_EDITAR              ICON    DISCARDABLE     "res\\MISC22.ICO"
+IDR_MAINFRAME           ICON                    "res\\PC02.ICO"
+
+IDR_CACHE2TYPE          ICON                    "res\\Cache2003Doc.ico"
+
+IDI_SIMULAR             ICON                    "res\\ARW01RT.ICO"
+
+IDI_ULTIMO_DAT          ICON                    "res\\ARW02DN.ICO"
+
+IDI_ANTERIOR_DAT        ICON                    "res\\ARW02LT.ICO"
+
+IDI_SIGUIENTE_DAT       ICON                    "res\\ARW02RT.ICO"
+
+IDI_PRIMERO_DAT         ICON                    "res\\ARW02UP.ICO"
+
+IDI_ULTIMO_SEC          ICON                    "res\\ARW04DN.ICO"
+
+IDI_ANTERIOR_SEC        ICON                    "res\\ARW04LT.ICO"
+
+IDI_SIGUIENTE_SEC       ICON                    "res\\ARW04RT.ICO"
+
+IDI_PRIMERO_SEC         ICON                    "res\\ARW04UP.ICO"
+
+IDI_TIEMPOS             ICON                    "res\\CLOCK02.ICO"
+
+IDI_SIMBOLOGIA          ICON                    "res\\EYE.ICO"
+
+IDI_ESTADISTICAS        ICON                    "res\\GRAPH07.ICO"
+
+IDI_OPCIONES            ICON                    "res\\TRFFC17.ICO"
+
+IDI_ESCRITURA           ICON                    "res\\NOTE14.ICO"
+
+IDI_MEMORIAS            ICON                    "res\\MISC25.ICO"
+
+IDI_POLITICAS           ICON                    "res\\MISC15.ICO"
+
+IDI_BUSCAR              ICON                    "res\\BINOCULR.ICO"
+
+IDI_DIRECCION           ICON                    "res\\BULLSEYE.ICO"
+
+IDI_AGREGAR             ICON                    "res\\MISC18.ICO"
+
+IDI_EDITAR              ICON                    "res\\MISC22.ICO"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Bitmap
 //
 
-IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
-IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
-IDR_TOOLBAR_CONFIGURACION BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
-IDR_TOOLBAR_DATOS       BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
-IDR_TOOLBAR_SECUENCIAS  BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDB_SPLASH              BITMAP                  "Splsh16.bmp"
+
+IDR_TOOLBAR_CONFIGURACION BITMAP                  "res\\toolbar1.bmp"
+
+IDR_TOOLBAR_DATOS       BITMAP                  "res\\bmp00001.bmp"
+
+IDR_TOOLBAR_SECUENCIAS  BITMAP                  "res\\bmp00002.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Toolbar
 //
 
-IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+IDR_MAINFRAME TOOLBAR 16, 15
 BEGIN
     BUTTON      ID_FILE_NEW
     BUTTON      ID_FILE_OPEN
@@ -120,7 +145,7 @@ BEGIN
     BUTTON      ID_CONTEXT_HELP
 END
 
-IDR_TOOLBAR_CONFIGURACION TOOLBAR DISCARDABLE  16, 15
+IDR_TOOLBAR_CONFIGURACION TOOLBAR 16, 15
 BEGIN
     BUTTON      ID_CONFIGURACION_SIMULACION
     BUTTON      ID_CONFIGURACION_MEMORIAS
@@ -134,7 +159,7 @@ BEGIN
     SEPARATOR
 END
 
-IDR_TOOLBAR_DATOS TOOLBAR DISCARDABLE  16, 15
+IDR_TOOLBAR_DATOS TOOLBAR 16, 15
 BEGIN
     BUTTON      IDC_B_AGREGAR
     BUTTON      IDC_B_EDITAR
@@ -145,7 +170,7 @@ BEGIN
     BUTTON      IDC_B_BUSCAR
 END
 
-IDR_TOOLBAR_SECUENCIAS TOOLBAR DISCARDABLE  16, 16
+IDR_TOOLBAR_SECUENCIAS TOOLBAR 16, 16
 BEGIN
     BUTTON      IDC_B_AGREGAR_SEC
     BUTTON      IDC_B_EDITAR_SEC
@@ -161,7 +186,7 @@ END
 // Menu
 //
 
-IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+IDR_MAINFRAME MENU
 BEGIN
     POPUP "&Archivo"
     BEGIN
@@ -196,10 +221,8 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "Opciones &simulación\tAlt+S", ID_CONFIGURACION_SIMULACION
         MENUITEM SEPARATOR
-        MENUITEM "Tamaño de  &memorias y bloques \tCrt+M", 
-                                                ID_CONFIGURACION_MEMORIAS
-        MENUITEM "Políticas de emplazamiento y &reemplazamiento\tCtrl+R", 
-                                                ID_CONFIGURAR_POLTICAS
+        MENUITEM "Tamaño de  &memorias y bloques \tCrt+M", ID_CONFIGURACION_MEMORIAS
+        MENUITEM "Políticas de emplazamiento y &reemplazamiento\tCtrl+R", ID_CONFIGURAR_POLTICAS
         MENUITEM "Políticas de &escritura\tCtrl+E", ID_CONFIGURAR_ACTUALIZA
         MENUITEM "&Tiempos de acceso\tCtrl+T",  ID_CONFIGURAR_TIEMPOSACCESO
     END
@@ -216,16 +239,14 @@ BEGIN
         MENUITEM "&Simbología de colores",      ID_SIMBOLOGIA
         MENUITEM SEPARATOR
         MENUITEM "Contador de fallos",          IDD_CONTADOR_LINEAS
-        MENUITEM "Tipo de instruccion memoria principal (Lec/Esc)", 
-                                                IDD_TIPO_DATO_MP
-        MENUITEM "Tipo de instrucción memoria cache (Lect/Esc)", 
-                                                IDD_TIPO_DATO_MC
+        MENUITEM "Tipo de instruccion memoria principal (Lec/Esc)", IDD_TIPO_DATO_MP
+        MENUITEM "Tipo de instrucción memoria cache (Lect/Esc)", IDD_TIPO_DATO_MC
     END
     POPUP "Ay&uda"
     BEGIN
-        MENUITEM "Temas de &ayuda Cache2003\tF1", ID_HELP_FINDER
+        MENUITEM "Temas de &ayuda Cache2020\tF1", ID_HELP_FINDER
         MENUITEM SEPARATOR
-        MENUITEM "&Acerca de Cache2003...",     ID_APP_ABOUT
+        MENUITEM "&Acerca de Cache2020...",     ID_APP_ABOUT
     END
 END
 
@@ -235,7 +256,7 @@ END
 // Accelerator
 //
 
-IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+IDR_MAINFRAME ACCELERATORS
 BEGIN
     "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
     "E",            ID_CONFIGURAR_ACTUALIZA, VIRTKEY, CONTROL, NOINVERT
@@ -268,34 +289,30 @@ END
 // Dialog
 //
 
-IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 102
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Acerca de Cache2003"
-FONT 8, "MS Sans Serif"
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de Cache2020"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
-    LTEXT           "Cache2003 Versión 1.0",IDC_STATIC_VERSION,40,10,119,8,
-                    SS_NOPREFIX
-    LTEXT           "Copyright (C) 2003 by Mauricio Alfaro ",IDC_STATIC_COPY,
-                    40,25,158,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Cache2020 Versión 1.1",IDC_STATIC_VERSION,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003 by Mauricio Alfaro ",IDC_STATIC_COPY,40,25,158,8
     DEFPUSHBUTTON   "&Aceptar",IDOK,178,7,50,14,WS_GROUP
-    LTEXT           "Ing. Mauricio Ernesto Alfaro Parada",IDC_STATIC_NMEAP,
-                    39,56,116,8
-    LTEXT           "mail : mauricioalfaro@telesal.net",IDC_STATIC_MEAP,39,
-                    65,123,9
-    GROUPBOX        "Realizado por :",IDC_STATIC_TITULO,27,44,138,40
+    LTEXT           "Ing. Mauricio Ernesto Alfaro Parada",IDC_STATIC_NMEAP,21,55,116,8
+    LTEXT           "mail : mauricioalfaro@telesal.net",IDC_STATIC_MEAP,19,65,116,9
+    GROUPBOX        "Realizado por :",IDC_STATIC_TITULO,15,44,123,40
+    GROUPBOX        "Actualizado por:",IDC_STATIC_TITULO2,142,44,77,40
+    CTEXT           "Martin Cuellar",IDC_STATIC_NMEAP2,146,54,68,8
+    CTEXT           "nelbren@gmail.com",IDC_STATIC_NMEAP3,146,66,69,8
 END
 
 IDD_CACHE2003_FORM DIALOGEX 0, 0, 406, 322
-STYLE WS_CHILD
-FONT 8, "MS Sans Serif"
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
     EDITTEXT        IDC_DATOSDLG_DAT,49,284,30,12,ES_AUTOHSCROLL
-    CONTROL         "",IDC_REJILLA_MP,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
-                    WS_TABSTOP,79,20,159,135
     LTEXT           "Blq",IDC_STATIC_BLQ,11,57,14,10
-    EDITTEXT        IDC_N_FILAS_BLOQUE,34,55,34,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_N_FILAS_BLOQUE,34,55,34,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Dirección :",IDC_STATIC_DIR,13,274,30,9
     EDITTEXT        IDC_DATOSDLG_DIRECCION,49,273,30,12,ES_AUTOHSCROLL
     LTEXT           "Dato :",IDC_STATIC_DAT,13,284,30,9
@@ -319,153 +336,97 @@ BEGIN
     PUSHBUTTON      "Llenar MP",IDC_BTN_LLENAR_MP,5,175,42,14
     EDITTEXT        IDC_N_MP,182,155,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
     CTEXT           "Memoria Cache",IDC_MC,240,5,156,10
-    CONTROL         "",IDC_REJILLA_MC,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
-                    WS_TABSTOP,240,20,159,135
+    CONTROL         "",IDC_REJILLA_MC,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,240,20,159,135
     EDITTEXT        IDC_N_FILAS_MC,34,41,34,12,ES_AUTOHSCROLL | ES_READONLY
     EDITTEXT        IDC_N_MC,201,155,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
-    EDITTEXT        IDC_N_BLOQUE,221,155,20,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
+    EDITTEXT        IDC_N_BLOQUE,221,155,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
     EDITTEXT        IDC_N_VIAS,241,155,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
-    EDITTEXT        IDC_P_EMPLAZAMIENTO,262,155,25,12,ES_AUTOHSCROLL | 
-                    ES_READONLY | NOT WS_VISIBLE
-    EDITTEXT        IDC_P_REMPLAZAMIENTO,287,155,25,12,ES_AUTOHSCROLL | 
-                    ES_READONLY | NOT WS_VISIBLE
+    EDITTEXT        IDC_P_EMPLAZAMIENTO,262,155,25,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    EDITTEXT        IDC_P_REMPLAZAMIENTO,287,155,25,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
     PUSHBUTTON      "Simular",IDC_SIMULAR,5,190,42,15
-    GROUPBOX        "Datos de simulación",IDC_STATIC_DATOS_SIMULACION,79,160,
-                    320,100
-    LTEXT           "Posición palabra en MP :",IDC_STATIC_PALABRA,252,195,81,
-                    10
-    EDITTEXT        IDC_EDIT_PALABRA,333,192,60,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    LTEXT           "Posición bloque en MP : ",IDC_STATIC_BLOQUE,252,205,78,
-                    10
-    EDITTEXT        IDC_EDIT_BLOQUE,333,204,60,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    LTEXT           "Posición palabra en bloque :",IDC_STATIC_PALABRA_BLOQUE,
-                    252,215,93,10
-    EDITTEXT        IDC_EDIT_PALABRA_BLOQUE,347,214,46,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    GROUPBOX        "Datos de simulación",IDC_STATIC_DATOS_SIMULACION,79,160,320,100
+    LTEXT           "Posición palabra en MP :",IDC_STATIC_PALABRA,252,195,81,10
+    EDITTEXT        IDC_EDIT_PALABRA,333,192,60,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Posición bloque en MP : ",IDC_STATIC_BLOQUE,252,205,78,10
+    EDITTEXT        IDC_EDIT_BLOQUE,333,204,60,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Posición palabra en bloque :",IDC_STATIC_PALABRA_BLOQUE,252,215,93,10
+    EDITTEXT        IDC_EDIT_PALABRA_BLOQUE,347,214,46,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Posición bloque en MC :",IDC_STATIC_LINEA,252,225,90,10
-    EDITTEXT        IDC_EDIT_LINEA,347,224,46,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_LINEA,347,224,46,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Conj",IDC_STATIC_N_BLOQUES_CONJ,12,125,18,10
-    EDITTEXT        IDC_EDIT_N_BLOQUES_CONJ,34,123,33,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_N_BLOQUES_CONJ,34,123,33,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "MC ",IDC_STATIC_N_CONJ,13,156,14,10
     LTEXT           "Conj",IDC_STATIC_PALABRAS_CONJ,11,71,19,10
-    EDITTEXT        IDC_EDIT_PALABRAS_CONJ,34,69,34,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_EDIT_N_CONJ,34,153,33,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PALABRAS_CONJ,34,69,34,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_N_CONJ,34,153,33,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Aciertos :",IDC_STATIC_ACIERTOS,87,234,30,8
-    EDITTEXT        IDC_EDIT_ACIERTOS,157,233,30,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ACIERTOS,157,233,30,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Fallos :",IDC_STATIC_FALLOS,87,244,30,10
-    EDITTEXT        IDC_EDIT_FALLOS,157,243,30,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_FALLOS,157,243,30,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "No. Simulaciones",IDC_STATIC_SIMULACIONES,87,223,56,10
-    EDITTEXT        IDC_EDIT_SIMULACIONES,157,223,30,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    GROUPBOX        "No. Palabras",IDC_STATIC_FILAS,5,17,69,68,0,
-                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SIMULACIONES,157,223,30,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "No. Palabras",IDC_STATIC_FILAS,5,17,69,68,0,WS_EX_TRANSPARENT
     LTEXT           "MP",IDC_STATIC_MP,11,30,12,10
     LTEXT           "MC",IDC_STATIC_MC,11,43,12,10
-    GROUPBOX        "No. Bloques",IDC_STATIC_N_BLOQUES,5,86,69,54,0,
-                    WS_EX_TRANSPARENT
+    GROUPBOX        "No. Bloques",IDC_STATIC_N_BLOQUES,5,86,69,54,0,WS_EX_TRANSPARENT
     LTEXT           "MP",IDC_STATIC_MP2,12,99,12,10
     LTEXT           "MC",IDC_STATIC_MC2,12,112,12,10
-    EDITTEXT        IDC_EDIT_BLOQUES_MP,34,98,33,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_EDIT_BLOQUES_MC,34,110,33,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_EDIT_W,161,155,20,12,ES_AUTOHSCROLL | ES_READONLY | 
-                    NOT WS_VISIBLE
-    EDITTEXT        IDC_EDIT_INI_LINEA,312,155,20,12,ES_AUTOHSCROLL | 
-                    ES_READONLY | NOT WS_VISIBLE
-    CONTROL         "Lec/Esc",IDC_CHECK_L_E,"Button",BS_AUTOCHECKBOX | 
-                    WS_TABSTOP,8,219,43,10
-    CONTROL         "Cont. Fallos",IDC_CHECK_CONT,"Button",BS_AUTOCHECKBOX | 
-                    WS_TABSTOP,8,228,53,10
-    LTEXT           "Posición conjunto en MC :",IDC_STATIC_CONJ_MC,252,235,
-                    94,10
+    EDITTEXT        IDC_EDIT_BLOQUES_MP,34,98,33,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_BLOQUES_MC,34,110,33,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_W,161,155,20,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_INI_LINEA,312,155,20,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    CONTROL         "Lec/Esc",IDC_CHECK_L_E,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,219,43,10
+    CONTROL         "Cont. Fallos",IDC_CHECK_CONT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,228,53,10
+    LTEXT           "Posición conjunto en MC :",IDC_STATIC_CONJ_MC,252,235,94,10
     EDITTEXT        IDC_EDIT_CONJ,357,234,36,12,ES_AUTOHSCROLL | ES_READONLY
-    LTEXT           "Posición bloque en el conjunto :",IDC_STATIC_LINEA_CONJ,
-                    252,245,106,10
-    EDITTEXT        IDC_EDIT_N_LINEAS,357,243,36,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    CONTROL         "Cont. Edad",IDC_CHECK_EDAD,"Button",BS_AUTOCHECKBOX | 
-                    WS_TABSTOP,8,237,51,10
-    CONTROL         "Cont. Frecuencia",IDC_CHECK_FREC,"Button",
-                    BS_AUTOCHECKBOX | WS_TABSTOP,8,248,70,8
-    EDITTEXT        IDC_EDIT_MET_EMPLAZA,156,171,85,12,ES_CENTER | 
-                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
-                    WS_EX_STATICEDGE
-    EDITTEXT        IDC_EDIT_MET_REEMPLAZA,156,182,45,12,ES_CENTER | 
-                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
-                    WS_EX_STATICEDGE
+    LTEXT           "Posición bloque en el conjunto :",IDC_STATIC_LINEA_CONJ,252,245,106,10
+    EDITTEXT        IDC_EDIT_N_LINEAS,357,243,36,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Cont. Edad",IDC_CHECK_EDAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,237,51,10
+    CONTROL         "Cont. Frecuencia",IDC_CHECK_FREC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,248,70,8
+    EDITTEXT        IDC_EDIT_MET_EMPLAZA,156,171,85,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MET_REEMPLAZA,156,182,45,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
     GROUPBOX        "No. Conjuntos",IDC_STATIC_N_CONJUNTOS,5,142,69,28
-    EDITTEXT        IDC_EDIT_TIP_ESC,139,155,20,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_ASIGNACION,117,155,20,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TIP_ESC,139,155,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_ASIGNACION,117,155,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
     EDITTEXT        IDC_EDIT_DATO,155,194,71,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Dato seleccionado :",IDC_STATIC_DATO,86,195,66,10
-    EDITTEXT        IDC_EDIT_DATO_MC,155,206,71,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_DATO_MC,155,206,71,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Dato escrito en MC :",IDC_STATIC_DATO_MC,86,208,69,10
-    EDITTEXT        IDC_EDIT_TIPO_DATO,99,155,20,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_TIPO,228,194,16,12,ES_CENTER | ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIPO_DATO,99,155,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TIPO,228,194,16,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Emplazamiento",IDC_STATIC_EMPLAZA,85,171,47,10
     LTEXT           "Reemplazamiento",IDC_STATIC_REEMPLAZA,85,183,56,10
     GROUPBOX        "Ubicaciones",IDC_STATIC_UBICACIONES,248,180,151,80
     LTEXT           "Tiempo de acceso medio :",IDC_STATIC_TA,251,169,84,9
-    EDITTEXT        IDC_DATOSDLG_TIP,219,276,18,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    GROUPBOX        "Adición/Edición de datos de memoria principal",
-                    IDC_STATIC_EDICION,6,261,219,54
+    EDITTEXT        IDC_DATOSDLG_TIP,219,276,18,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    GROUPBOX        "Adición/Edición de datos de memoria principal",IDC_STATIC_EDICION,6,261,219,54
     GROUPBOX        "Tipo de dato",IDC_STATIC,84,271,57,32
-    EDITTEXT        IDC_EDIT_REG,219,285,18,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    GROUPBOX        "Adición/Edición de secuencia de simulación",
-                    IDC_STATIC_SECUENCIAS,231,261,168,54
+    EDITTEXT        IDC_EDIT_REG,219,285,18,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    GROUPBOX        "Adición/Edición de secuencia de simulación",IDC_STATIC_SECUENCIAS,231,261,168,54
     LTEXT           "Secuencia :",IDC_STATIC_SECUENCIA,314,276,39,9
     EDITTEXT        IDC_EDIT_SECUENCIA,357,275,37,12,ES_AUTOHSCROLL
     LTEXT           "Dirección :",IDC_STATIC_DIR_SEC,315,288,38,9
     LTEXT           "Registro 0 de  0",IDC_STATIC_REG_SEC,315,303,78,8
-    EDITTEXT        IDC_EDIT_SEC,220,294,16,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_AUTOMATICO,144,300,15,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_AUTOMATICO_SEC,222,264,9,12,ES_AUTOHSCROLL | 
-                    NOT WS_VISIBLE
-    EDITTEXT        IDC_N_SECUENCIAS,216,303,24,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_T_PARALELO,192,218,12,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_T_BASICO,206,218,12,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_T_TP,219,218,12,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_T_TC,232,218,9,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SEC,220,294,16,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AUTOMATICO,144,300,15,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AUTOMATICO_SEC,222,264,9,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_N_SECUENCIAS,216,303,24,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_T_PARALELO,192,218,12,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_T_BASICO,206,218,12,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_T_TP,219,218,12,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_T_TC,232,218,9,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
     EDITTEXT        IDC_EDIT_TA,336,168,40,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "ns",IDC_STATIC_NS,377,171,12,8
-    EDITTEXT        IDC_EDIT_N_ESCRITURAS,228,207,12,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_COLOR_VERDE,192,233,9,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_COLOR_ROJO,192,243,9,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    CONTROL         "Lectura",IDC_RADIO_LECT,"Button",BS_AUTORADIOBUTTON | 
-                    WS_GROUP,89,281,40,10
-    CONTROL         "Escritura",IDC_RADIO_ESC,"Button",BS_AUTORADIOBUTTON,89,
-                    291,40,10
+    EDITTEXT        IDC_EDIT_N_ESCRITURAS,228,207,12,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_COLOR_VERDE,192,233,9,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_COLOR_ROJO,192,243,9,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Lectura",IDC_RADIO_LECT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,89,281,40,10
+    CONTROL         "Escritura",IDC_RADIO_ESC,"Button",BS_AUTORADIOBUTTON,89,291,40,10
+    CONTROL         "",IDC_REJILLA_MP,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,80,20,159,12
 END
 
-IDD_MEMORIAS_DLG DIALOG DISCARDABLE  0, 0, 297, 191
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_MEMORIAS_DLG DIALOG 0, 0, 297, 191
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Configuración de Tamaño de Memorias y Bloque"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -478,30 +439,23 @@ BEGIN
     EDITTEXT        IDC_BYTES_MC,42,95,35,15,ES_AUTOHSCROLL | ES_READONLY
     EDITTEXT        IDC_KBYTES_MC,120,95,35,15,ES_AUTOHSCROLL | ES_READONLY
     EDITTEXT        IDC_MBYTES_MC,191,95,35,15,ES_AUTOHSCROLL | ES_READONLY
-    EDITTEXT        IDC_BYTES_BLOQUE,42,155,35,15,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_KBYTES_BLOQUE,120,155,35,15,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_MBYTES_BLOQUE,190,155,35,15,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_BYTES_BLOQUE,42,155,35,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_KBYTES_BLOQUE,120,155,35,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MBYTES_BLOQUE,190,155,35,15,ES_AUTOHSCROLL | ES_READONLY
     DEFPUSHBUTTON   "&Aceptar",IDOK,240,10,50,14
     PUSHBUTTON      "&Cancelar",IDCANCEL,240,25,50,14
-    GROUPBOX        "Configuración de memoria principal",IDC_STATIC_MP,10,5,
-                    225,55
-    LTEXT           "Tamaño de MP (2^n)           n :",IDC_STATIC,15,18,100,
-                    10
+    GROUPBOX        "Configuración de memoria principal",IDC_STATIC_MP,10,5,225,55
+    LTEXT           "Tamaño de MP (2^n)           n :",IDC_STATIC,15,18,100,10
     LTEXT           "Bytes",IDC_STATIC_BYTESMP,15,39,24,10
     LTEXT           "KBytes:",IDC_STATIC_KBYTES_MP,86,39,24,10
     LTEXT           "MBytes",IDC_STATIC_MBYTES_MP,161,39,24,10
     GROUPBOX        "Configuración memoria cache",IDC_STATIC_MC,10,64,225,55
-    LTEXT           "Tamaño de MC (2^n)            n :",IDC_STATIC,15,77,100,
-                    10
+    LTEXT           "Tamaño de MC (2^n)            n :",IDC_STATIC,15,77,100,10
     LTEXT           "Bytes",IDC_STATIC_BYTES_MC,16,98,24,10
     LTEXT           "KBytes",IDC_STATIC_KBYTES_MC,88,98,24,10
     LTEXT           "MBytes",IDC_STATIC_MBYTES_MC,162,98,24,10
     GROUPBOX        "Configuración de bloques",IDC_STATIC_BLQ,10,123,225,55
-    LTEXT           "Tamaño de Blq (2^n)             n :",IDC_STATIC,15,137,
-                    100,10
+    LTEXT           "Tamaño de Blq (2^n)             n :",IDC_STATIC,15,137,100,10
     LTEXT           "Bytes",IDC_STATIC_BYTES_BLOQUE,15,157,24,10
     LTEXT           "KBytes",IDC_STATIC_KBYTES_BLOQUE,85,157,24,10
     LTEXT           "MBytes",IDC_STATIC_MBYTES_BLOQUE,160,157,24,10
@@ -514,8 +468,7 @@ BEGIN
 END
 
 IDD_DIRECCION_DLG DIALOGEX 100, 600, 288, 142
-STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_HSCROLL | 
-    WS_SYSMENU | WS_THICKFRAME
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_HSCROLL | WS_SYSMENU | WS_THICKFRAME
 EXSTYLE WS_EX_CLIENTEDGE
 CAPTION "Dirección de Memoria Principal"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
@@ -537,189 +490,133 @@ BEGIN
     GROUPBOX        "Datos de simulación",IDC_STATIC,128,8,156,65
     EDITTEXT        IDC_EDIT_DATO,208,31,68,12,ES_AUTOHSCROLL
     LTEXT           "Dato seleccionado :",IDC_STATIC_DATO,139,32,69,10
-    EDITTEXT        IDC_EDIT_N_MP,264,73,21,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_N_MP,264,73,21,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
     LTEXT           "Dato escrito en MC :",IDC_STATIC_DATO_ESC,138,44,65,10
     EDITTEXT        IDC_EDIT_DATO_ESC,208,43,68,12,ES_AUTOHSCROLL
     LTEXT           "Tipo de dato :",IDC_STATIC_TIPO,138,57,45,10
     EDITTEXT        IDC_EDIT_TIPO,208,56,25,12,ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT_N_MC,264,83,20,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_N_BLOQUE,264,93,20,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_N_VIAS,264,103,20,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_DIRECCION,264,113,21,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_DIRECCION2,264,123,21,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_N_MC,264,83,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_N_BLOQUE,264,93,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_N_VIAS,264,103,20,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DIRECCION,264,113,21,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DIRECCION2,264,123,21,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
     EDITTEXT        IDC_EDIT_COLOR_OCRE,96,19,12,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_COLOR_MOSTAZA,96,43,12,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_COLOR_ROSADO,96,55,12,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_COLOR_NARANJA,96,31,12,12,ES_AUTOHSCROLL
 END
 
-IDD_POLITICAS_DLG DIALOG DISCARDABLE  0, 0, 226, 167
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_POLITICAS_DLG DIALOG 0, 0, 226, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Emplazamiento y Reemplazamiento de Memoria Cache"
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "&Aceptar",IDOK,165,5,50,14
     PUSHBUTTON      "&Cancelar",IDCANCEL,165,20,50,14
-    GROUPBOX        "Políticas de emplazamiento",IDC_STATIC_EMPLAZA,10,5,140,
-                    80
-    CONTROL         "Método directo",IDC_POLIT_DIRECTO,"Button",
-                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,16,75,10
-    CONTROL         "Método asociativo",IDC_POLIT_ASOCIATIVO,"Button",
-                    BS_AUTORADIOBUTTON,15,28,74,10
+    GROUPBOX        "Políticas de emplazamiento",IDC_STATIC_EMPLAZA,10,5,140,80
+    CONTROL         "Método directo",IDC_POLIT_DIRECTO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,16,75,10
+    CONTROL         "Método asociativo",IDC_POLIT_ASOCIATIVO,"Button",BS_AUTORADIOBUTTON,15,28,74,10
     CONTROL         "Método asociativo por conjunto",IDC_POLIT_A_COJUNTOS,
                     "Button",BS_AUTORADIOBUTTON,15,43,120,10
     GROUPBOX        "",IDC_STATIC,10,35,130,43
     LTEXT           "No. Líneas por conjunto :",IDC_STATIC,18,60,82,10
-    GROUPBOX        "Políticas de reemplazamiento",IDC_STATIC_REEMPLAZA,10,
-                    90,140,65
-    CONTROL         "Método Aleatorio",IDC_POLIT_ALEATORIO,"Button",
-                    BS_AUTORADIOBUTTON | WS_GROUP,16,102,80,10
-    CONTROL         "Método LRU",IDC_POLIT_LRU,"Button",BS_AUTORADIOBUTTON,
-                    16,113,80,10
-    CONTROL         "Método LFU",IDC_POLIT_LFU,"Button",BS_AUTORADIOBUTTON,
-                    16,124,80,10
-    CONTROL         "Método FIFO",IDC_POLIT_FIFO,"Button",BS_AUTORADIOBUTTON,
-                    16,135,80,10
-    COMBOBOX        IDC_N_VIAS,100,58,35,45,CBS_DROPDOWN | WS_DISABLED | 
-                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Políticas de reemplazamiento",IDC_STATIC_REEMPLAZA,10,90,140,65
+    CONTROL         "Método Aleatorio",IDC_POLIT_ALEATORIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,102,80,10
+    CONTROL         "Método LRU",IDC_POLIT_LRU,"Button",BS_AUTORADIOBUTTON,16,113,80,10
+    CONTROL         "Método LFU",IDC_POLIT_LFU,"Button",BS_AUTORADIOBUTTON,16,124,80,10
+    CONTROL         "Método FIFO",IDC_POLIT_FIFO,"Button",BS_AUTORADIOBUTTON,16,135,80,10
+    COMBOBOX        IDC_N_VIAS,100,58,35,45,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
 END
 
-IDD_ESCRITURA_DLG DIALOG DISCARDABLE  0, 0, 242, 101
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_ESCRITURA_DLG DIALOG 0, 0, 242, 101
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Políticas de Actualización de Memoria Cache"
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "&Aceptar",IDOK,185,5,50,14
     PUSHBUTTON      "&Cancelar",IDCANCEL,185,20,50,14
-    CONTROL         "Escritura Directa",IDC_ESC_DIRECTA,"Button",
-                    BS_AUTORADIOBUTTON | WS_GROUP,30,17,70,10
-    CONTROL         "Post-Escritura",IDC_ESC_POST,"Button",
-                    BS_AUTORADIOBUTTON,30,70,70,10
-    CONTROL         "Con Asignación en Escritura",IDC_CON_ASIGNACION,"Button",
-                    BS_AUTORADIOBUTTON | WS_GROUP,50,37,105,10
-    CONTROL         "Sin Asignación en Escritura",IDC_SIN_ASIGNACION,"Button",
-                    BS_AUTORADIOBUTTON,50,49,105,10
-    GROUPBOX        "Políticas de Escritura",IDC_STATIC_POLITICAS,15,5,160,
-                    85
+    CONTROL         "Escritura Directa",IDC_ESC_DIRECTA,"Button",BS_AUTORADIOBUTTON | WS_GROUP,30,17,70,10
+    CONTROL         "Post-Escritura",IDC_ESC_POST,"Button",BS_AUTORADIOBUTTON,30,70,70,10
+    CONTROL         "Con Asignación en Escritura",IDC_CON_ASIGNACION,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,37,105,10
+    CONTROL         "Sin Asignación en Escritura",IDC_SIN_ASIGNACION,"Button",BS_AUTORADIOBUTTON,50,49,105,10
+    GROUPBOX        "Políticas de Escritura",IDC_STATIC_POLITICAS,15,5,160,85
     GROUPBOX        "Tipo de escritura directa",IDC_STATIC_TIPO,38,27,130,35
 END
 
-IDD_TIEMPOS DIALOG DISCARDABLE  0, 0, 271, 167
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_TIEMPOS DIALOG 0, 0, 271, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Configuración de rendimiento del sistema"
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "&Aceptar",IDOK,203,15,50,14
     PUSHBUTTON      "&Cancelar",IDCANCEL,204,31,50,14
-    LTEXT           "Tiempo de acceso a una palabra de MP :",IDC_STATIC,15,
-                    119,138,10
-    LTEXT           "Tiempo de acceso a una palabra de MC :",IDC_STATIC,15,
-                    133,138,10
+    LTEXT           "Tiempo de acceso a una palabra de MP :",IDC_STATIC,15,119,138,10
+    LTEXT           "Tiempo de acceso a una palabra de MC :",IDC_STATIC,15,133,138,10
     EDITTEXT        IDC_EDIT_TA_MP,159,118,39,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_TA_MC,159,131,39,12,ES_AUTOHSCROLL
     LTEXT           "ns",IDC_STATIC,201,121,12,9
     LTEXT           "ns",IDC_STATIC,201,134,12,9
     GROUPBOX        "Tiempos de ciclo",IDC_STATIC_CICLO,9,103,216,48
-    GROUPBOX        "Transferencia de bloque",IDC_STATIC_TRANSFERENCIA,10,15,
-                    99,38
-    CONTROL         "Paralelo",IDC_RADIO_PARALELO,"Button",
-                    BS_AUTORADIOBUTTON | WS_GROUP,19,27,60,10
-    CONTROL         "Secuencial",IDC_RADIO_SECUENCIAL,"Button",
-                    BS_AUTORADIOBUTTON,19,39,60,10
-    GROUPBOX        "Cálculo de tiempo de acceso",IDC_STATIC_ACCESO,10,58,
-                    215,42
+    GROUPBOX        "Transferencia de bloque",IDC_STATIC_TRANSFERENCIA,10,15,99,38
+    CONTROL         "Paralelo",IDC_RADIO_PARALELO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,19,27,60,10
+    CONTROL         "Secuencial",IDC_RADIO_SECUENCIAL,"Button",BS_AUTORADIOBUTTON,19,39,60,10
+    GROUPBOX        "Cálculo de tiempo de acceso",IDC_STATIC_ACCESO,10,58,215,42
     CONTROL         "Fórmula básica de tiempos de acceso",IDC_RADIO_BASICA,
                     "Button",BS_AUTORADIOBUTTON | WS_GROUP,20,72,138,10
-    CONTROL         "Fórmula que involucra políticas de escritura ",
-                    IDC_RADIO_NO_BASICA,"Button",BS_AUTORADIOBUTTON,20,84,
-                    178,10
+    CONTROL         "Fórmula que involucra políticas de escritura ",IDC_RADIO_NO_BASICA,
+                    "Button",BS_AUTORADIOBUTTON,20,84,178,10
 END
 
 IDD_ESTADISTICAS_DLG DIALOGEX 0, 0, 362, 268
-STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
-    WS_THICKFRAME
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
 EXSTYLE WS_EX_CLIENTEDGE
 CAPTION "Estadísticas de Simulación"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "&Cerrar",IDOK,279,171,63,14
-    CONTROL         "",IDC_MSCHART,"{3A2B370C-BA0A-11D1-B137-0000F8753F5D}",
-                    WS_TABSTOP,18,7,326,152
-    EDITTEXT        IDC_EDIT_ACIERTOS,111,194,32,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_EDIT_FALLOS,111,182,32,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    CONTROL         "",IDC_MSCHART,"{3A2B370C-BA0A-11D1-B137-0000F8753F5D}",WS_TABSTOP,18,7,326,152
+    EDITTEXT        IDC_EDIT_ACIERTOS,111,194,32,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_FALLOS,111,182,32,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Aciertos (C2) :",IDC_STATIC_ACIERTOS,63,194,45,8
     LTEXT           "Fallos (C1) :",IDC_STATIC_FALLOS,70,182,38,8
-    GROUPBOX        "Información de Fallos/Aciertos",IDC_STATIC_INFORME,18,
-                    168,135,55
-    EDITTEXT        IDC_EDIT_SIMULACIONES,111,206,32,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    LTEXT           "Total referencias MP (C3) :",IDC_STATIC_TOTAL,23,206,87,
-                    10
-    LTEXT           "Tasa de aciertos :",IDC_STATIC_TASA_ACIERTOS,165,194,58,
-                    8
+    GROUPBOX        "Información de Fallos/Aciertos",IDC_STATIC_INFORME,18,168,135,55
+    EDITTEXT        IDC_EDIT_SIMULACIONES,111,206,32,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Total referencias MP (C3) :",IDC_STATIC_TOTAL,23,206,87,10
+    LTEXT           "Tasa de aciertos :",IDC_STATIC_TASA_ACIERTOS,165,194,58,8
     LTEXT           "Tasa de fallos :",IDC_STATIC_TASA_FALLOS,165,182,57,8
-    EDITTEXT        IDC_EDIT_TASA_FALLOS,238,179,21,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_EDIT_TASA_ACIERTOS,238,191,21,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    LTEXT           "Datos de tipo Escritura (%) :",IDC_STATIC_ESC,213,250,
-                    91,8
-    LTEXT           "Datos de tipo Lectura (%) :",IDC_STATIC_LECT,213,237,88,
-                    8
-    EDITTEXT        IDC_EDIT_POR_LECTURA,304,235,32,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_EDIT_POR_ESCRITURA,304,248,32,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    LTEXT           "Probabilidad bloques modificados :",IDC_STATIC_PROB_MOD,
-                    187,212,111,8
+    EDITTEXT        IDC_EDIT_TASA_FALLOS,238,179,21,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TASA_ACIERTOS,238,191,21,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Datos de tipo Escritura (%) :",IDC_STATIC_ESC,213,250,91,8
+    LTEXT           "Datos de tipo Lectura (%) :",IDC_STATIC_LECT,213,237,88,8
+    EDITTEXT        IDC_EDIT_POR_LECTURA,304,235,32,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_POR_ESCRITURA,304,248,32,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Probabilidad bloques modificados :",IDC_STATIC_PROB_MOD,187,212,111,8
     LTEXT           "Tpenalización :",IDC_STATIC_TASA_PENALIZA,97,250,49,8
-    EDITTEXT        IDC_EDIT_TASA_PENALIZACION,151,248,25,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
-    EDITTEXT        IDC_EDIT_PROB_MOD,303,210,32,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TASA_PENALIZACION,151,248,25,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PROB_MOD,303,210,32,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Tacceso medio :",IDC_STATIC_TACCESO_MEDIO,97,236,54,8
     GROUPBOX        "Tasas",IDC_STATIC_TASAS,159,168,105,41
     EDITTEXT        IDC_EDIT_TMA,151,235,25,12,ES_AUTOHSCROLL | ES_READONLY
-    EDITTEXT        IDC_EDIT_T_BASICO,345,21,15,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_T_PARALELO,345,33,15,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_T_TC,345,81,15,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_T_TP,345,69,15,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_N_ESC,345,45,15,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_ASIGNACION,345,96,15,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_TIPO_ESC,348,57,12,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_N_BLOQUES_MP,345,111,14,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
-    EDITTEXT        IDC_EDIT_TACCESO,66,235,21,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_T_BASICO,345,21,15,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_T_PARALELO,345,33,15,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_T_TC,345,81,15,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_T_TP,345,69,15,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_N_ESC,345,45,15,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_ASIGNACION,345,96,15,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TIPO_ESC,348,57,12,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_N_BLOQUES_MP,345,111,14,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TACCESO,66,235,21,12,ES_AUTOHSCROLL | ES_READONLY
     LTEXT           "Tacceso :",IDC_STATIC_TACCESO,27,236,33,8
     PUSHBUTTON      "Ver Detalles",IDC_B_DETALLES,279,186,63,14
-    EDITTEXT        IDC_EDIT_TAM_MP,345,126,13,12,ES_AUTOHSCROLL | NOT 
-                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TAM_MP,345,126,13,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
     LTEXT           "Tacierto :",IDC_STATIC_TACIERTO,27,250,33,8
-    EDITTEXT        IDC_EDIT_T_ACIERTO,66,248,21,12,ES_AUTOHSCROLL | 
-                    ES_READONLY
+    EDITTEXT        IDC_EDIT_T_ACIERTO,66,248,21,12,ES_AUTOHSCROLL | ES_READONLY
     GROUPBOX        "Tiempos ( ns )",IDC_STATIC_TIEMPOS,18,225,164,39
-    GROUPBOX        "Porcentaje de datos en MP",IDC_STATIC_PORCENTAJES,207,
-                    225,136,39
+    GROUPBOX        "Porcentaje de datos en MP",IDC_STATIC_PORCENTAJES,207,225,136,39
 END
 
-IDD_DLG_BUSCAR DIALOG DISCARDABLE  0, 0, 223, 68
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_DLG_BUSCAR DIALOG 0, 0, 223, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Buscar Datos en Memoria Principal"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -727,40 +624,32 @@ BEGIN
     PUSHBUTTON      "&Cancelar",IDCANCEL,159,21,50,14
     EDITTEXT        IDC_EDIT_DIR,92,40,56,12,ES_AUTOHSCROLL
     LTEXT           "Dirección de MP (dec) :",IDC_STATIC,10,42,80,9
-    LTEXT           "Ingrese la dirección de MP correspondiente al dato que desea conocer en formato decimal.",
-                    IDC_STATIC,9,6,141,24
+    LTEXT           "Ingrese la dirección de MP correspondiente al dato que desea conocer en formato decimal.",IDC_STATIC,9,6,141,24
 END
 
-IDD_SIMULACION_DLG DIALOG DISCARDABLE  0, 0, 340, 134
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_SIMULACION_DLG DIALOG 0, 0, 340, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Opciones de Simulación"
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "&Aceptar",IDOK,283,12,50,14
     PUSHBUTTON      "&Cancelar",IDCANCEL,283,27,50,14
-    GROUPBOX        "Ingreso de datos/instrucciones en MP",IDC_STATIC_MP,12,
-                    9,264,45
-    CONTROL         "Generación automática de datos/instrucciones en forma aleatoria",
-                    IDC_RADIO_AUTOMATICO,"Button",BS_AUTORADIOBUTTON | 
-                    WS_GROUP,21,24,228,10
-    CONTROL         "Introducción de datos/instrucciones manualmente",
-                    IDC_RADIO_MANUAL,"Button",BS_AUTORADIOBUTTON,21,36,195,
-                    10
-    GROUPBOX        "Secuencia de busqueda de datos/instrucciones en MP",
-                    IDC_STATIC_SEC,12,60,264,57
-    CONTROL         "Generación automática de secuencia aleatoria",
-                    IDC_RADIO_SEC_AUTOMATICA,"Button",BS_AUTORADIOBUTTON | 
-                    WS_GROUP,21,72,219,10
-    CONTROL         "Programación manual de secuencia de busqueda de datos/instrucciones",
-                    IDC_RADIO_MANUAL_SEC,"Button",BS_AUTORADIOBUTTON,21,86,
-                    246,10
+    GROUPBOX        "Ingreso de datos/instrucciones en MP",IDC_STATIC_MP,12,9,264,45
+    CONTROL         "Generación automática de datos/instrucciones en forma aleatoria",IDC_RADIO_AUTOMATICO,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,21,24,228,10
+    CONTROL         "Introducción de datos/instrucciones manualmente",IDC_RADIO_MANUAL,
+                    "Button",BS_AUTORADIOBUTTON,21,36,195,10
+    GROUPBOX        "Secuencia de busqueda de datos/instrucciones en MP",IDC_STATIC_SEC,12,60,264,57
+    CONTROL         "Generación automática de secuencia aleatoria",IDC_RADIO_SEC_AUTOMATICA,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,21,72,219,10
+    CONTROL         "Programación manual de secuencia de busqueda de datos/instrucciones",IDC_RADIO_MANUAL_SEC,
+                    "Button",BS_AUTORADIOBUTTON,21,86,246,10
     LTEXT           "No. de Secuencias :",IDC_STATIC_N_SEC,24,99,69,9
     EDITTEXT        IDC_EDIT_N_SEC,100,98,40,12,ES_AUTOHSCROLL
 END
 
 IDD_COLORES_DLG DIALOGEX 0, 0, 152, 217
-STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
-    WS_THICKFRAME
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
 EXSTYLE WS_EX_CLIENTEDGE
 CAPTION "Simbología de Colores"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
@@ -780,8 +669,7 @@ BEGIN
     EDITTEXT        IDC_EDIT_ROSADO,12,63,15,12,ES_AUTOHSCROLL
     LTEXT           "Conjuntos",IDC_STATIC,31,65,34,8
     EDITTEXT        IDC_EDIT_AMARILLO,12,101,15,12,ES_AUTOHSCROLL
-    LTEXT           "Bloque del programa que se busca",IDC_STATIC,30,104,111,
-                    8
+    LTEXT           "Bloque del programa que se busca",IDC_STATIC,30,104,111,8
     EDITTEXT        IDC_EDIT_AZUL,12,115,15,12,ES_AUTOHSCROLL
     LTEXT           "Bloque encontrado/reemplazado",IDC_STATIC,30,116,111,8
     EDITTEXT        IDC_EDIT_ROJO,12,152,15,12,ES_AUTOHSCROLL
@@ -801,7 +689,6 @@ BEGIN
 END
 
 
-#ifndef _MAC
 /////////////////////////////////////////////////////////////////////////////
 //
 // Version
@@ -809,7 +696,7 @@ END
 
 VS_VERSION_INFO VERSIONINFO
  FILEVERSION 1,0,0,1
- PRODUCTVERSION 1,0,0,1
+ PRODUCTVERSION 1,1,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -824,18 +711,13 @@ BEGIN
     BEGIN
         BLOCK "0c0a04b0"
         BEGIN
-            VALUE "Comments", "\0"
-            VALUE "CompanyName", "\0"
-            VALUE "FileDescription", "Aplicación MFC Cache2003\0"
-            VALUE "FileVersion", "1, 0, 0, 1\0"
-            VALUE "InternalName", "Cache2003\0"
-            VALUE "LegalCopyright", "Copyright (C) 2003\0"
-            VALUE "LegalTrademarks", "\0"
-            VALUE "OriginalFilename", "Cache2003.EXE\0"
-            VALUE "PrivateBuild", "\0"
-            VALUE "ProductName", "Aplicación Cache2003\0"
-            VALUE "ProductVersion", "1, 0, 0, 1\0"
-            VALUE "SpecialBuild", "\0"
+            VALUE "FileDescription", "Aplicación MFC Cache2020"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Cache2020"
+            VALUE "LegalCopyright", "Copyright (C) 2003"
+            VALUE "OriginalFilename", "Cache2003.EXE"
+            VALUE "ProductName", "Aplicación Cache2020"
+            VALUE "ProductVersion", "1.1.0.1"
         END
     END
     BLOCK "VarFileInfo"
@@ -844,8 +726,6 @@ BEGIN
     END
 END
 
-#endif    // !_MAC
-
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -853,7 +733,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO DISCARDABLE 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -968,44 +848,46 @@ END
 
 IDD_CACHE2003_FORM DLGINIT
 BEGIN
-    IDC_REJILLA_MP, 0x37a, 306, 0
+    IDC_REJILLA_MC, 0x37a, 329, 0
 0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
 0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
 0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
 0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
-0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
-0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x18b4, 0x0000, 0x16a2, 
-0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0010, 0x0000, 
-0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
-0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
-0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
-0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
-0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
-0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
-0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
-0xaa00, 0x4b00, 0x51b8, 0x0001, 0x0000, 0x0190, 0x4244, 0x0001, 0x4d0d, 
-0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 0x5204, 0x0be3, 0x8f91, 
-0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
-
-    IDC_REJILLA_MC, 0x37a, 306, 0
+0x0033, 0x0030, 0x0029, 0x0000, 0x0001, 0x0000, 0x0021, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x0001, 0x8001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x8001, 0x0001, 0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0xb400, 
+0x0018, 0xa200, 0x0016, 0x4200, 0x6f6f, 0x0050, 0x0600, 0x8000, 0x0000, 
+0x1000, 0x0000, 0x0200, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0000, 0xff00, 0xffff, 0x0000, 0xff00, 0x0f00, 0x0000, 0x0080, 0xff00, 
+0x0d00, 0x0000, 0x0e80, 0x0000, 0x8080, 0x8080, 0xc000, 0xc0c0, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0100, 0x0000, 
+0x0100, 0x0200, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0100, 0x0100, 
+0x0000, 0x0100, 0x0400, 0x0000, 0x0000, 0x0000, 0x0300, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0000, 0x9000, 0x4401, 
+0x0142, 0x0d00, 0x534d, 0x5320, 0x6e61, 0x2073, 0x6553, 0x6972, 0x0466, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
+    IDC_REJILLA_MP, 0x37a, 329, 0
 0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
 0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
 0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
 0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
-0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
-0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x18b4, 0x0000, 0x16a2, 
-0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0010, 0x0000, 
-0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0xffff, 
-0x00ff, 0x0000, 0x00ff, 0x000f, 0x8000, 0x0000, 0x00ff, 0x000d, 0x8000, 
-0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
-0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
-0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
-0x0003, 0x0000, 0x0000, 0x0003, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
-0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
-0xaa00, 0x4b00, 0x51b8, 0x0001, 0x0000, 0x0190, 0x4244, 0x0001, 0x4d0d, 
-0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 0x5204, 0x0be3, 0x8f91, 
-0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
-
+0x0033, 0x0030, 0x0029, 0x0000, 0x0001, 0x0000, 0x0021, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x0001, 0x8001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x8001, 0x0001, 0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0xb400, 
+0x0018, 0x1100, 0x0002, 0x4200, 0x6f6f, 0x0050, 0x0600, 0x8000, 0x0000, 
+0x1000, 0x0000, 0x0200, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0000, 0xff00, 0xffff, 0x0000, 0xff00, 0x0f00, 0x0000, 0x0080, 0xff00, 
+0x0d00, 0x0000, 0x0e80, 0x0000, 0x8080, 0x8080, 0xc000, 0xc0c0, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0100, 0x0000, 
+0x0100, 0x0200, 0x0300, 0x0000, 0x0000, 0x0300, 0x0000, 0x0100, 0x0100, 
+0x0000, 0x0100, 0x0400, 0x0000, 0x0000, 0x0000, 0x0300, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0000, 0x9000, 0x4401, 
+0x0142, 0x0d00, 0x534d, 0x5320, 0x6e61, 0x2073, 0x6553, 0x6972, 0x0466, 
+0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 0x0074, 
+0x0000, 0x0000, "\000" 
     0
 END
 
@@ -1554,22 +1436,38 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CACHE2003_FORM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // String Table
 //
 
-STRINGTABLE PRELOAD DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "Cache2003\n\nCache2\nArchivos Cache2 (*.txt)\n.txt\nCache2003.Document\nCache2 Document"
 END
 
-STRINGTABLE PRELOAD DISCARDABLE 
+STRINGTABLE
 BEGIN
-    AFX_IDS_APP_TITLE       "Cache2003"
+    AFX_IDS_APP_TITLE       "Cache2020"
     AFX_IDS_IDLEMESSAGE     "Para obtener ayuda presione F1"
     AFX_IDS_HELPMODEMESSAGE "Seleccione el objeto sobre el que desea ayuda"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "EXT"
     ID_INDICATOR_CAPS       "MAY"
@@ -1579,7 +1477,7 @@ BEGIN
     ID_INDICATOR_REC        "GRB"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_NEW             "Crea una nueva simulación\nNuevo"
     ID_FILE_OPEN            "Abre una simulación ya existente\nAbrir"
@@ -1592,7 +1490,7 @@ BEGIN
     ID_FILE_PRINT_PREVIEW   "Muestra páginas completas\nPresentación preliminar"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_APP_ABOUT            "Muestra información del programa, número de versión y copyright\nAcerca de"
     ID_APP_EXIT             "Sale de la aplicación; le pide que guarde los documentos\nSalir"
@@ -1603,7 +1501,7 @@ BEGIN
     ID_HELP                 "Muestra ayuda para la tarea o el comando actual\nAyuda"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_MRU_FILE1       "Abre este documento"
     ID_FILE_MRU_FILE2       "Abre este documento"
@@ -1623,18 +1521,18 @@ BEGIN
     ID_FILE_MRU_FILE16      "Abre este documento"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_NEXT_PANE            "Cambia a la siguiente sección de ventana\nSiguiente sección"
     ID_PREV_PANE            "Vuelve a la sección de ventana anterior\nSección anterior"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_WINDOW_SPLIT         "Divide la ventana activa en secciones\nDividir"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_CLEAR           "Borra la selección\nBorrar"
     ID_EDIT_CLEAR_ALL       "Borra todo\nBorrar todo"
@@ -1649,13 +1547,13 @@ BEGIN
     ID_EDIT_REDO            "Rehace la acción que acaba de deshacerse\nRehacer"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_VIEW_TOOLBAR         "Muestra u oculta la barra de herramientas\nAlternar barra de herramientas"
     ID_VIEW_STATUS_BAR      "Muestra u oculta la barra de estado\nAlternar barra de estado"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCSIZE          "Cambia el tamaño de la ventana"
     AFX_IDS_SCMOVE          "Cambia la posición de la ventana"
@@ -1666,13 +1564,13 @@ BEGIN
     AFX_IDS_SCCLOSE         "Cierra la ventana activa y le pide que guarde los documentos"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCRESTORE       "Restaura la ventana a su tamaño normal"
     AFX_IDS_SCTASKLIST      "Activa la lista de tareas"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_PREVIEW_CLOSE   "Cierra el modo de presentación preliminar\nCancelar presentación preliminar"
     IDS_BINARIO             "Binario"
@@ -1683,7 +1581,7 @@ BEGIN
     ID_INDICADOR_TIPO_ESC   "CON ASIG"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_CONFIGURACION_MEMORIAS 
                             "Visualiza formulario para asignar tamaños de memorias y bloque\nAsignar tamaños de memorias"
@@ -1699,7 +1597,7 @@ BEGIN
     ID_FORMAT_OCTAL         "Cambia la vista de la interfaz a formato octal"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_CONFIGURAR_TIEMPOSACCESO 
                             "Visualiza formulario para asignar tiempos de accesos a memorias\nAsignar tiempos de acceso"
@@ -1710,12 +1608,12 @@ BEGIN
     ID_SIMBOLOGIA           "Muestra simbología de colores utilizados en la simulación\nSimbología de colores"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDD_CONTADOR_LINEAS     "Habilita la visualización del contador de fallos en memoria cache"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDC_B_AGREGAR           "Añade un nuevo dato/instrucción a la memoria principal\nAgregar registro a memoria principal"
     IDC_B_BUSCAR            "Visualiza el formulario para buscar un dato específico en la memoria principal\nBuscar dato en memoria principal"
@@ -1724,13 +1622,13 @@ BEGIN
     IDC_B_SIGUIENTE         "Visualiza el registro siguiente al actual en la memoria principal\nVer siguiente dato de memoria principal"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDC_B_ULTIMO            "Visuliza el último registro de la memoria principal\nVer último dato de memoria principal"
     IDC_B_EDITAR            "Edita un dato/instrucción de la memoria principal\nModificar registro de memoria principal"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     IDC_B_PRIMERO_SEC       "Visualiza el primer registro de la secuencia programada\nVer primera secuencia"
     IDC_B_ANTERIOR_SEC      "Visualiza el registro anterior al actual de la secuencia programada\nVer secuencia anterior"
@@ -1740,20 +1638,20 @@ BEGIN
     IDC_B_EDITAR_SEC        "Edita el redistro actual de la secuencia de simulación\nModificar registro secuencia"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_VIEW_CONFIGURACION_BAR 
                             "Muestra u oculta la barra de configuración de parámetros de simulación\nAlternar barra de configuración"
     ID_VIEW_DATOS_BAR       "Muestra u oculta la barra de gestión de datos de la memoria principal\nAlternar barra de gestión de datos"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE
 BEGIN
     ID_VIEW_SECUENCIAS_BAR  "Muestra u oculta la barra de gestión de secuencias\nAlternar barra de gestión de secuencias"
     ID_HELP_CACHE2003       "Muestra temas de ayuda del simualdor Cache2003\nTemas de ayuda de Cache2003"
 END
 
-#endif    // Spanish (Modern) resources
+#endif    // Español (España, alfabetización internacional) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -1774,8 +1672,8 @@ LANGUAGE 10, 3
 #pragma code_page(1252)
 #endif //_WIN32
 #include "res\Cache2003.rc2"  // non-Microsoft Visual C++ edited resources
-#include "l.esp\afxres.rc"          // Standard components
-#include "l.esp\afxprint.rc"        // printing/print preview resources
+//#include "l.esp\afxres.rc"          // Standard components
+//#include "l.esp\afxprint.rc"        // printing/print preview resources
 #endif
 
 /////////////////////////////////////////////////////////////////////////////

@@ -144,7 +144,7 @@ public:
 	}
 	int GetP_Emplazamiento()
 	{
-		return m_iP_Emplazamiento;
+		return 0; // m_iP_Emplazamiento;  // 2020-05-17 - Check this out - nelbren
 	}
 	int GetP_Reemplazamiento()
 	{

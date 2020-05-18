@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Developer Studio generated include file.
-// Used by Cache2003.rc
+// Archivo de inclusión generado de Microsoft Visual C++.
+// Usado por Cache2003.rc
 //
 #define IDD_ABOUTBOX                    100
 #define IDD_CACHE2003_FORM              101
@@ -109,6 +109,7 @@
 #define IDC_BTN_LLENAR_MP               1082
 #define IDC_REJILLA_MC                  1084
 #define IDC_N_FILAS_MC                  1085
+#define IDC_REJILLA_MC2                 1086
 #define IDC_N_FILAS_BLOQUE              1087
 #define IDC_P_EMPLAZAMIENTO             1091
 #define IDC_P_REMPLAZAMIENTO            1092
@@ -307,8 +308,11 @@
 #define IDC_STATIC_COPY                 1326
 #define IDC_STATIC_NMEAP                1327
 #define IDC_STATIC_NCHCH                1328
+#define IDC_STATIC_TITULO2              1328
 #define IDC_STATIC_NTONINO              1329
+#define IDC_STATIC_NMEAP2               1329
 #define IDC_STATIC_NCHCH2               1330
+#define IDC_STATIC_NMEAP3               1330
 #define IDC_STATIC_NLADILLA             1331
 #define ID_CONFIGURACION_MEMORIAS       32771
 #define ID_CONFIGURAR_POLTICASDEEMPLAZAMIENTOYREEMPLAZAMIENTO 32772
@@ -350,7 +354,7 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
-#define _APS_NEXT_RESOURCE_VALUE        195
+#define _APS_NEXT_RESOURCE_VALUE        196
 #define _APS_NEXT_COMMAND_VALUE         32818
 #define _APS_NEXT_CONTROL_VALUE         1332
 #define _APS_NEXT_SYMED_VALUE           105

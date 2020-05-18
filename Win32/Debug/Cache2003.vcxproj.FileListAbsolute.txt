@@ -1,0 +1,2 @@
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Win32\Debug\Cache2020.exe
+C:\Users\nelbren\Documents\Proyectos de VS\Cache2020\Win32\Debug\Cache2020.pdb

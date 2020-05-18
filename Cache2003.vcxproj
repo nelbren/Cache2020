@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{EB554EEC-2512-4F2D-8240-6889A86C531B}</ProjectGuid>
+    <ProjectName>Cache2020</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Cache2003.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Cache2003.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0c0a</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Cache2003.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\Cache2003.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\Cache2003.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>C:\Users\nelbren\Documents\Proyectos de VS\Ultimate Grid\Include</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Cache2003.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0c0a</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Cache2003.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(Platform)\$(Configuration)\Cache2020.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>MFC_DLL;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Ultimate Grid\Demos\BindingToArray\MyCUG.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGCBType.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGCell.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGCelTyp.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGCnrBtn.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGCTarrw.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGCtrl.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGDLType.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGDrgDrp.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGDrwHnt.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGDtaSrc.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGEdit.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGEditBase.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\ugformat.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\uggdinfo.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGGrid.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGHint.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\ughscrol.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\ugLstBox.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGMEdit.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGMemMan.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGMultiS.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\ugprint.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\ugptrlst.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\ugsidehd.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGStrOp.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\ugtab.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGTopHdg.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\ugvscrol.cpp" />
+    <ClCompile Include="..\Ultimate Grid\Source\UGXPThemes.cpp" />
+    <ClCompile Include="BuscarDlg.cpp" />
+    <ClCompile Include="Cache2003.cpp" />
+    <ClCompile Include="Cache2003Doc.cpp" />
+    <ClCompile Include="Cache2003View.cpp" />
+    <ClCompile Include="ColoresDlg.cpp" />
+    <ClCompile Include="Datos.cpp" />
+    <ClCompile Include="DatosDlg.cpp" />
+    <ClCompile Include="DireccionDlg.cpp" />
+    <ClCompile Include="EscrituraDlg.cpp" />
+    <ClCompile Include="EstadisticasDlg.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="Funciones.h" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MemoriasDlg.cpp" />
+    <ClCompile Include="mschart.cpp" />
+    <ClCompile Include="msflexgrid.cpp" />
+    <ClCompile Include="Parametros.cpp" />
+    <ClCompile Include="PoliticasDlg.cpp" />
+    <ClCompile Include="Secuencia.cpp" />
+    <ClCompile Include="SimulacionDlg.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TiemposDlg.cpp" />
+    <ClCompile Include="vcaxis.cpp" />
+    <ClCompile Include="vcaxisgrid.cpp" />
+    <ClCompile Include="vcaxisscale.cpp" />
+    <ClCompile Include="vcaxistitle.cpp" />
+    <ClCompile Include="vcbackdrop.cpp" />
+    <ClCompile Include="vcbrush.cpp" />
+    <ClCompile Include="vccategoryscale.cpp" />
+    <ClCompile Include="vccolor.cpp" />
+    <ClCompile Include="vccoor.cpp" />
+    <ClCompile Include="vcdatagrid.cpp" />
+    <ClCompile Include="vcdatapoint.cpp" />
+    <ClCompile Include="vcdatapointlabel.cpp" />
+    <ClCompile Include="vcdatapoints.cpp" />
+    <ClCompile Include="vcfill.cpp" />
+    <ClCompile Include="vcfont.cpp" />
+    <ClCompile Include="vcfootnote.cpp" />
+    <ClCompile Include="vcframe.cpp" />
+    <ClCompile Include="vcintersection.cpp" />
+    <ClCompile Include="vclabel.cpp" />
+    <ClCompile Include="vclabels.cpp" />
+    <ClCompile Include="vclcoor.cpp" />
+    <ClCompile Include="vclegend.cpp" />
+    <ClCompile Include="vclight.cpp" />
+    <ClCompile Include="vclightsource.cpp" />
+    <ClCompile Include="vclightsources.cpp" />
+    <ClCompile Include="vclocation.cpp" />
+    <ClCompile Include="vcmarker.cpp" />
+    <ClCompile Include="vcpen.cpp" />
+    <ClCompile Include="vcplot.cpp" />
+    <ClCompile Include="vcplotbase.cpp" />
+    <ClCompile Include="vcrect.cpp" />
+    <ClCompile Include="vcseries.cpp" />
+    <ClCompile Include="vcseriescollection.cpp" />
+    <ClCompile Include="vcseriesmarker.cpp" />
+    <ClCompile Include="vcseriesposition.cpp" />
+    <ClCompile Include="vcshadow.cpp" />
+    <ClCompile Include="vcstatline.cpp" />
+    <ClCompile Include="vctextlayout.cpp" />
+    <ClCompile Include="vctick.cpp" />
+    <ClCompile Include="vctitle.cpp" />
+    <ClCompile Include="vcvaluescale.cpp" />
+    <ClCompile Include="vcview3d.cpp" />
+    <ClCompile Include="vcwall.cpp" />
+    <ClCompile Include="vcweighting.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Cache2003.reg" />
+    <CustomBuild Include="res\Cache2003.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Cache2003.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Ultimate Grid\Demos\BindingToArray\MyCUG.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UG64Bit.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGCBType.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGCell.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugceltyp.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGCnrBtn.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGCTarrw.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGCtrl.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugdefine.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGDLType.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGDrgDrp.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGDrwHnt.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGDtaSrc.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGEdit.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGEditBase.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugformat.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\uggdinfo.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGGrid.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGHint.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ughscrol.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\uglstbox.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGMEdit.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGMemMan.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGMultiS.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugprint.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugptrlst.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugsidehd.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGStrOp.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugstruct.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugtab.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\UGTopHdg.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugvscrol.h" />
+    <ClInclude Include="..\Ultimate Grid\Include\ugxpthemes.h" />
+    <ClInclude Include="BuscarDlg.h" />
+    <ClInclude Include="Cache2003.h" />
+    <ClInclude Include="Cache2003Doc.h" />
+    <ClInclude Include="Cache2003View.h" />
+    <ClInclude Include="ColoresDlg.h" />
+    <ClInclude Include="Datos.h" />
+    <ClInclude Include="DatosDlg.h" />
+    <ClInclude Include="DireccionDlg.h" />
+    <ClInclude Include="EscrituraDlg.h" />
+    <ClInclude Include="EstadisticasDlg.h" />
+    <ClInclude Include="font.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MemoriasDlg.h" />
+    <ClInclude Include="mschart.h" />
+    <ClInclude Include="msflexgrid.h" />
+    <ClInclude Include="Parametros.h" />
+    <ClInclude Include="PoliticasDlg.h" />
+    <CustomBuild Include="Resource.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo. &gt;"hlp\$(TargetName).hm" 
+echo // Commands (ID_* and IDM_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Prompts (IDP_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Resources (IDR_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Dialogs (IDD_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Frame Controls (IDW_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo. &gt;"hlp\$(TargetName).hm" 
+echo // Commands (ID_* and IDM_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Prompts (IDP_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Resources (IDR_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Dialogs (IDD_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Frame Controls (IDW_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\$(TargetName).hm;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Secuencia.h" />
+    <ClInclude Include="SimulacionDlg.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TiemposDlg.h" />
+    <ClInclude Include="vcaxis.h" />
+    <ClInclude Include="vcaxisgrid.h" />
+    <ClInclude Include="vcaxisscale.h" />
+    <ClInclude Include="vcaxistitle.h" />
+    <ClInclude Include="vcbackdrop.h" />
+    <ClInclude Include="vcbrush.h" />
+    <ClInclude Include="vccategoryscale.h" />
+    <ClInclude Include="vccolor.h" />
+    <ClInclude Include="vccoor.h" />
+    <ClInclude Include="vcdatagrid.h" />
+    <ClInclude Include="vcdatapoint.h" />
+    <ClInclude Include="vcdatapointlabel.h" />
+    <ClInclude Include="vcdatapoints.h" />
+    <ClInclude Include="vcfill.h" />
+    <ClInclude Include="vcfont.h" />
+    <ClInclude Include="vcfootnote.h" />
+    <ClInclude Include="vcframe.h" />
+    <ClInclude Include="vcintersection.h" />
+    <ClInclude Include="vclabel.h" />
+    <ClInclude Include="vclabels.h" />
+    <ClInclude Include="vclcoor.h" />
+    <ClInclude Include="vclegend.h" />
+    <ClInclude Include="vclight.h" />
+    <ClInclude Include="vclightsource.h" />
+    <ClInclude Include="vclightsources.h" />
+    <ClInclude Include="vclocation.h" />
+    <ClInclude Include="vcmarker.h" />
+    <ClInclude Include="vcpen.h" />
+    <ClInclude Include="vcplot.h" />
+    <ClInclude Include="vcplotbase.h" />
+    <ClInclude Include="vcrect.h" />
+    <ClInclude Include="vcseries.h" />
+    <ClInclude Include="vcseriescollection.h" />
+    <ClInclude Include="vcseriesmarker.h" />
+    <ClInclude Include="vcseriesposition.h" />
+    <ClInclude Include="vcshadow.h" />
+    <ClInclude Include="vcstatline.h" />
+    <ClInclude Include="vctextlayout.h" />
+    <ClInclude Include="vctick.h" />
+    <ClInclude Include="vctitle.h" />
+    <ClInclude Include="vcvaluescale.h" />
+    <ClInclude Include="vcview3d.h" />
+    <ClInclude Include="vcwall.h" />
+    <ClInclude Include="vcweighting.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ARW01RT.ICO" />
+    <Image Include="res\ARW02DN.ICO" />
+    <Image Include="res\ARW02LT.ICO" />
+    <Image Include="res\ARW02RT.ICO" />
+    <Image Include="res\ARW02UP.ICO" />
+    <Image Include="res\ARW04DN.ICO" />
+    <Image Include="res\ARW04LT.ICO" />
+    <Image Include="res\ARW04RT.ICO" />
+    <Image Include="res\ARW04UP.ICO" />
+    <Image Include="res\BINOCULR.ICO" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\BULLSEYE.ICO" />
+    <Image Include="res\Cache2003.ico" />
+    <Image Include="res\Cache2003Doc.ico" />
+    <Image Include="res\CLOCK02.ICO" />
+    <Image Include="res\etiqueta.ico" />
+    <Image Include="res\EYE.ICO" />
+    <Image Include="res\GRAPH07.ICO" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\ico00002.ico" />
+    <Image Include="res\ico00003.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\MISC15.ICO" />
+    <Image Include="res\MISC18.ICO" />
+    <Image Include="res\MISC22.ICO" />
+    <Image Include="res\MISC25.ICO" />
+    <Image Include="res\NOTE14.ICO" />
+    <Image Include="res\PC02.ICO" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\TRFFC17.ICO" />
+    <Image Include="Splsh16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
