@@ -1,0 +1,17 @@
+Instalación :
+
+En el directorio Install buscar el archivo denominado Setup y dar click.
+Se ejecuta el instalador, ir respondiendo a las preeguntas y llenando las cajas 
+de texto correspondientes en cada paso.
+
+
+Esta versión es funcional para los sistemas operativos siguientes :
+Windows 95
+Windows 98
+Windows Millenium
+Windows 2000 Profetional
+Windows XP
+
+(En los otros sistemas de Windows posteriores no se ha probado, pueda que funcione o no)
+
+
